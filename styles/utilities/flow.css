@@ -1,0 +1,14 @@
+/*
+FLOW
+Wrapping row of children with ideal widths; children expand to fill space
+*/
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flow > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: var(--ideal-width, 30ch);
+}
