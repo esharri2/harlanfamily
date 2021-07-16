@@ -8,8 +8,9 @@
     "build:11ty": "ELEVENTY_ENV=production npx @11ty/eleventy",
     "build:rollup": "NODE_ENV=production rollup --config ",
     "clean": "rm -r -f _site _temp",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "dev": "npm-run-all -p dev:*",
-    "dev:11ty": "npx @11ty/eleventy --serve --quiet",
+    "dev:11ty": "npx @11ty/eleventy --serve",
     "dev:rollup": "rollup --config --watch",
     "start": "npm run dev"
   },
@@ -37,7 +38,6 @@
     "rollup": "^2.36.1",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-terser": "^7.0.2",
-    "tailwindcss": "^2.0.2",
     "terser": "^5.6.0"
   },
   "browserslist": [
@@ -46,7 +46,6 @@
     "maintained node versions"
   ],
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.0",
     "eleventy-plugin-metagen": "^1.4.0"
   }
 }

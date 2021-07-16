@@ -1,26 +1,17 @@
 <head>
-    {% render 'meta',
-        page_title: title,
-        site_title: site.title,
-        page_description: description,
-        site_description: site.description,
-        author: site.author,
-        domain: site.domain,
-        meta_image: site.meta_image,
-        meta_image_alt: site.meta_image_alt
-    %}
+    {% render 'meta', pageDescription: description, meta: meta, pageTitle: title %}
     <link
         as="font"
         crossorigin
         href="/manrope-regular.woff2"
         rel="preload"
         type="font/woff2" />
-    <link href="/main.css" rel="stylesheet" type="text/css" />
-    {% capture js %}
-        {% include "colorSet.js" %}
-    {% endcapture %}
+    <link href="/index.css" rel="stylesheet" type="text/css" />
+    {% comment %} Inline JS can go here...
     <script>
         {{ js | jsmin }}
     </script>
+    {% endcomment %}
+
     <script defer src="/main.js"></script>
 </head>

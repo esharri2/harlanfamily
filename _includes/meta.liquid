@@ -1,40 +1,33 @@
-{%- capture title -%}
-    {% if page_title %}{{page_title}} | {% endif %} {{ site_title }}
-{%- endcapture -%}
-{% assign description = page_description | default: site_description %}
-
+{% capture title %}{% if pageTitle %}{{pageTitle}} | {% endif %} {{ meta.title }}{% endcapture %}
+{% assign description = pageDescription | default: meta.desc %}
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{title}}</title>
-{% if author %}
-    <meta name="author" content="{{author}}">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<title>{{title}}{{meta.title}}</title>
+{% if meta.name %}
+  <meta name="author" content="{{meta.name}}">
 {% endif %}
 <meta name="description" content="{{description}}">
 <meta property="og:title" content="{{title}}">
 <meta property="og:type" content="website">
 <meta property="og:description" content="{{description}}">
-<meta property="og:url" content="{{domain}}">
-{% if domain and meta_image %}
-    <meta property="og:image" content="{{domain}}/images/{{meta_image}}">
+<meta property="og:url" content="{{meta.url}}">
+{% if img and img_alt %}
+  <meta property="og:image" content="{{meta.img}}">
+  <meta property="og:image:alt" content="{{meta.img_alt}}">
 {% endif %}
-{% if meta_image_alt %}
-    <meta property="og:image:alt" content="{{meta_image_alt}}">
-{% endif %}
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{{meta.witter_card_type}}">
 {% if twitter_handle %}
-    <meta name="twitter:site" content="{{twitter_handle}}">
+  <meta name="twitter:site" content="{{meta.twitter_handle}}">
 {% endif %}
 <meta name="twitter:title" content="{{title}}">
 <meta name="twitter:description" content="{{description}}">
-{% if domain and meta_image %}
-    <meta name="twitter:image" content="{{domain}}/images/{{meta_image}}">
+{% if img and img_alt %}
+  <meta name="twitter:image" content="{{img}}">
+  <meta name="twitter:image:alt" content="{{img_alt}}">
 {% endif %}
-{% if meta_image_alt %}
-    <meta name="twitter:image:alt" content="{{meta_image_alt}}">
-{% endif %}
-{% comment %}todo - fix this canonical link{% endcomment %}
-<link rel="canonical" href="{{domain}}">
+<link rel="canonical" href="{{meta.url}}">
+
 <meta content="{{theme_color}}" name="msapplication-TileColor">
 <meta content="{{theme_color}}" name="theme-color">
 

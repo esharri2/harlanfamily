@@ -3,6 +3,9 @@ import postcss from "rollup-plugin-postcss";
 
 const dev = process.env.NODE_ENV !== "production";
 
+console.log("HIiiiiii yo");
+console.log(dev);
+
 export default {
   input: "scripts/main.js",
   output: {
@@ -12,7 +15,7 @@ export default {
   plugins: [
     postcss({
       extract: true,
-      extract: "main.css",
+      extract: "index.css",
     }),
     !dev && terser(),
   ],

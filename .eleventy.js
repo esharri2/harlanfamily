@@ -1,16 +1,15 @@
+const addPlugins = require("./config/plugins");
 const addShortCodes = require("./config/shortcodes");
 const addPassThroughCopies = require("./config/passthroughs");
 const addTransforms = require("./config/transforms");
 const addFilters = require("./config/filters");
-const svgContents = require("eleventy-plugin-svg-contents");
-
 
 module.exports = function (eleventyConfig) {
+  addPlugins(eleventyConfig);
   addPassThroughCopies(eleventyConfig);
   addShortCodes(eleventyConfig);
   addTransforms(eleventyConfig);
   addFilters(eleventyConfig);
-  eleventyConfig.addPlugin(svgContents);
   eleventyConfig.addWatchTarget("./_temp/");
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setLiquidOptions({
@@ -26,4 +25,4 @@ module.exports = function (eleventyConfig) {
       input: "./pages",
     },
   };
-};;;
+};

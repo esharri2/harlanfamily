@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html  lang="en">
-    {% render 'head', site: site, page: page, title: title %}
+<html lang="en">
+    {% render 'head', description: description, meta: meta, page: page, title: title %}
     <body class="relative text-dark dark:text-light bg-light
             dark:bg-dark transition-colors">
         {% render 'ie-notice'%}
         {% render 'skip-to-content' %}
         {% render 'back-to-top' %}
-        <div >
-            {% include 'color-switch' %}
-        </div>
         <header >
             <div >
                 {% render 'navigation', navigation: navigation, page: page %}
