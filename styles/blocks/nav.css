@@ -1,0 +1,18 @@
+.nav {
+  padding-right: var(--space-l);
+
+  .nav__logo {
+    max-width: 200px;
+    margin-bottom: var(--space-l);
+
+    img {
+      height: auto;
+    }
+  }
+
+  .nav__section-title {
+    padding-bottom: var(--space-s);
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+}

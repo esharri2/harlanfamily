@@ -46,6 +46,7 @@
     "maintained node versions"
   ],
   "dependencies": {
-    "eleventy-plugin-metagen": "^1.4.0"
+    "eleventy-plugin-metagen": "^1.4.0",
+    "postcss-nested": "^5.0.5"
   }
 }

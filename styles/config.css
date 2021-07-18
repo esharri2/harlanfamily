@@ -1,17 +1,41 @@
 @font-face {
-  font-family: "Manrope";
+  font-family: "Vidaloka";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("manrope-regular.woff2") format("woff2"),
-    url("Manrope-Regular.woff") format("woff");
+  src: url("vidaloka.woff2") format("woff2"),
+    url("vidaloka.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Overpass";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(""), url("overpass-v5-latin-regular.woff2") format("woff2"),
-    url("overpass-v5-latin-regular.woff") format("woff");
+:root {
+
+  /* These values are hard typed for media queries throughout the project
+  Use find / replace to change. */
+  --breakpoint-l: 1440px;
+  --breakpoint-m: 768px;
+  --breakpoint-s: 576px;
+  --breakpoint-xs: 360px;
+
+  --color-jet: #353535;
+  --color-ivory: #fffded;
+  --color-red: #c70000;
+  --color-silver-sand: #bcbdc0;
+  --color-text: var(--color-jet);
+  --color-background: var(--color-ivory); 
+  --color-accent: var(--color-red); 
+
+
+  --font-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --font-title: "Vidaloka", Georgia, sans-serif;
+  --font-size-xl: 6rem;
+  --font-size-l: 4rem;
+  --font-size-m: 2rem;
+  --font-size-s: .8rem;
+
+  --space-s: .8rem;
+  --space-m: 1.6rem;
+  --space-l: 2.4rem;
+  --space-xl: 3.2rem;
+
+  --timing-fast: .2s;
 }

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     {% render 'head', description: description, meta: meta, page: page, title: title %}
-    <body class="relative text-dark dark:text-light bg-light
-            dark:bg-dark transition-colors">
-        {% render 'ie-notice'%}
+    <body class="page-container">
+        <!-- {% render 'ie-notice' %}
         {% render 'skip-to-content' %}
-        {% render 'back-to-top' %}
-        <header >
-            <div >
-                {% render 'navigation', navigation: navigation, page: page %}
-            </div>
-        </header>
-        <main  id="main">
-            {{ content }}
-        </main>
-        {% render 'footer', builtBy: site.builtBy, navigation: navigation_footer %}
+        {% render 'back-to-top' %} -->
+        {% render 'navigation-quick', data: navigation_quick %}
+        <div class="with-sidebar">
+          {% render 'navigation', data: navigation %}
+          <div>
+            {% render 'header', title: title, src: hero.src, darken: hero.darken, text-align: hero.text-align %}
+            <main id="main">
+                {{ content }}
+            </main>
+          </div>
+        </div>
+        <!-- {% render 'footer', builtBy: site.builtBy, navigation: navigation_footer %} -->
     </body>
 </html>

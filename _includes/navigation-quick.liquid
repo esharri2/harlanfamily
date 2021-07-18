@@ -1,0 +1,7 @@
+<nav class="nav-quick">
+  <ul class="reset nav-quick__list">
+    {% for item in data %}
+      <li class="nav-quick__item"><a href={{item.key}}>{{item.title}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

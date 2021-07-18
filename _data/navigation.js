@@ -1,8 +1,8 @@
 const sections = {
   association: "Association",
   people: "People",
-  history: "History",
-  news: "News and Events",
+  history: "Genealogy & History",
+  news: "News & Events",
 };
 
 const pages = [

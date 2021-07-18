@@ -1,0 +1,15 @@
+/* Creates a left sidebar / content on right layout */
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: nowrap;
+
+  & > *:first-child {
+    /* border-right: solid 1px var(--color-silver-sand); */
+    flex: var(--sidebar-width, 300px) 0 0;
+  }
+
+  & > :last-child {
+    flex: 100% 1 1;
+  }
+}
