@@ -1,0 +1,9 @@
+{
+  "title": "Template",
+  "description": "This is the template page",
+  "hero": {
+    "src": "mountain-range-stock.jpg",
+    "darken": "true",
+    "text-align": "center"
+  }
+}

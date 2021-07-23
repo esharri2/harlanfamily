@@ -2,7 +2,7 @@
   padding-right: var(--space-l);
 
   .nav__logo {
-    max-width: 200px;
+    max-width: 150px;
     margin-bottom: var(--space-l);
 
     img {

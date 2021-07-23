@@ -1,0 +1,8 @@
+{
+  "title": "About",
+  "description": "TODO, about page",
+  "hero": {
+    "darken": "true",
+    "text-align": "center"
+  }
+}

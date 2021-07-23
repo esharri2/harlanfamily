@@ -15,6 +15,7 @@
 @import 'blocks/header';
 @import 'blocks/ie-notice';
 @import 'blocks/link';
+@import 'blocks/markdown';
 @import 'blocks/nav';
 @import 'blocks/nav-quick';
 @import 'blocks/skip-to-content';

@@ -2,13 +2,12 @@
   display: flex;
   justify-content: flex-end;
   padding: var(--space-l) 0;
-  font-weight: bolder;
 
   ul {
     display: flex;
   }
 
-  &__item {
+  .nav-quick__item {
     margin-left: var(--space-l);
   }
 

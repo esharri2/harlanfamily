@@ -5,6 +5,7 @@
   align-items: center;
   height: 300px;
   position: relative;
+  margin-bottom: var(--space-xl);
 
   &__content {
     z-index: 1;

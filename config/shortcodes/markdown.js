@@ -6,7 +6,7 @@ const markdown = (eleventyConfig) => {
   });
 
   eleventyConfig.addPairedShortcode("markdown", (content) => {
-    return `<div class="md">${md.render(content)} </div>`;
+    return `<div class="md stack">${md.render(content)} </div>`;
   });
 };
 

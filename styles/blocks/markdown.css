@@ -1,0 +1,5 @@
+.md {
+  p {
+    max-width: 85ch;
+  }
+}
