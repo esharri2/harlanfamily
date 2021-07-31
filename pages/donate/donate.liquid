@@ -1,0 +1,42 @@
+<p>Provide details about your donation and then click to proceed to Paypal to complete your donation. You will have the option to pay with Paypal or use a credit or debit card.</p>
+<form class="stack" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="{{ donations.paypalEmail }}">
+  <input type="hidden" name="address1" value="9 Elm Street">
+
+  <!-- Specify a Donate button. -->
+  <input type="hidden" name="cmd" value="_donations">
+
+  <!-- Specify details about the contribution -->
+  <input type="hidden" name="item_name" value="{{ meta.title }}">
+  <input type="hidden" name="currency_code" value="USD">
+  
+  <div>
+    <input type="hidden" name="on0" value="Purpose">
+    <label for="purpose">Purpose:</label>
+    <select class="input" id="purpose" name="os0">
+      {% for purpose in donationPurposes %}
+        <option value="{{purpose}}">{{purpose}}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div>
+    <input type="hidden" name="on1" value="Purpose">
+    <label for="honor">(Optional) In honor of:</label>
+    <input class="input" id="honor" type="text" name="os1" />
+  </div>
+
+  <!-- Display the payment button. -->
+  <button class="button stack" type="submit">
+    <div>Click to complete your donation</div>
+    <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Go to Payapl to submit donation"/>
+  </button>
+  <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+
+<!-- https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png -->
+
+{% markdown %}
+  {%- include "content/donations.md" -%}
+{% endmarkdown %}

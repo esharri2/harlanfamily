@@ -1,4 +1,12 @@
 .md {
+
+  a {
+    color: var(--color-minsk);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
   p {
     max-width: 85ch;
   }

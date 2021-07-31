@@ -1,9 +1,13 @@
-The Harlan Family in America is a non-profit association formed in 1987 to perpetuate and promote the Harlan family heritage and genealogy. Most Harlans/ Harlands/ Harlins/ Harlens/ Harlons alive today are direct descendants of George or Michael Harland who emigrated from England and Ireland or from Thomas Harland who remained in Ireland. The family genealogy is documented in "The History and Genealogy of the Harlan Family" by Alpheus Harlan originally published in 1914.
+The Harlan Family in America Association was formed in 1987 in conjunction with a national family reunion held in Delaware, to celebrate the 300th anniversary of the immigration of George and Michael Harlan. The purpose of the organization is to document and perpetuate the history and genealogy of the family.
 
-These original Harlans were Quakers and came to the new world seeking religious freedom. They arrived at William Penn's Colony at New Castle, Delaware in 1687. Since that time their descendants have multiplied, diversified and spread across the United States. For more than 330 years, they have managed to stay together as a family by maintaining a family organization, publishing a newsletter, The [Harlan Record](/record), and holding national family reunions. Further information on these subjects is available on this site.
+The primary activity of the family is the semi-annual publication of a newsletter called the [Harlan Record](/newsletter). The newsletter serves as the means for communicating information about Harlan history, Harlan family members, and Harlan family activities. The Record also publishes inquiries for those doing research on their Harlan heritage.
 
-Other Harlans have immigrated to the United States in later years from England, Ireland, and Germany. We welcome the addition of their descendants to our extended family.
+Membership in the family organization is free but we encourage those who can afford to do so to send a yearly contribution.  Please send your contributions to:
 
-We assume no responsibility for the authenticity or accuracy of any material referred to in this web site or any other material that might be made available by the association. The following sites are made available to those interested in learning more about our family; those interested in doing research in genealogy; and those in our family interested in contacting others through e-mail.
+The Harlan Family in America  
+P. O. Box 333  
+Pleasant Unity, PA 15676  
 
-Contributions to the association may be tax-deductible.
+Changes of address and additions to the mailing list may also be sent to this address or may be e-mailed to [harlanfamilyinamerica@gmail.com](mailto:harlanfamilyinamerica@gmail.com).
+
+The official Harlan Family Association archives are kept at the Chester County Historical Society, West Chester, Pennsylvania. Here can be found historical documents related to the family and materials from all of the family reunions.

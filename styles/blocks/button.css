@@ -1,0 +1,13 @@
+.button {
+  background-color: var(--color-accent-secondary);
+  border: none;
+  box-shadow: var(--shadow-s);
+  color: var(--color-background);
+  padding: var(--space-m);
+  text-decoration: none;
+  transition: box-shadow var(--timing-fast);
+
+  &:hover {
+   box-shadow: var(--shadow-m);
+  }
+}

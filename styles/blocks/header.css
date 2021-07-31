@@ -1,11 +1,22 @@
 .header {
+  --height: 150px;
+
+  @media (min-width: 768px) {
+    --height: 300px;
+  }
+
   color: var(--color-background);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: var(--height);
   position: relative;
   margin-bottom: var(--space-xl);
+  padding: var(--space-l);
+
+  &.center {
+    text-align: center;
+  }
 
   &__content {
     z-index: 1;

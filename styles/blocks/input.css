@@ -1,0 +1,6 @@
+.input {
+  display: block;
+  max-width: 80vw;
+  padding: var(--space-s) var(--space-m);
+  width: 300px;
+}

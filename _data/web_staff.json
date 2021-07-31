@@ -1,0 +1,22 @@
+{
+  "coordinator": {
+    "name": "Fred Harlan",
+    "title": "Site Coordinator",
+    "email": "fredharlan@verizon.net"
+  },
+  "advisor": {
+    "name": "Kurt Harlan",
+    "title": "Website Technical Advisor",
+    "email": "kurt@kurt-harlan.net"
+  },
+  "webmaster": {
+    "name": "Evan Harrison",
+    "title": "Webmaster",
+    "email": "esharri2@gmail.com"
+  },
+  "genealogyDirector": {
+    "name": "Cynthia Rhoades",
+    "title": "Genealogy Director",
+    "email": "cr.rhoades@comcast.net"
+  }
+}

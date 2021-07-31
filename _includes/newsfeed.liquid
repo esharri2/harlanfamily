@@ -1,0 +1,24 @@
+{% unless posts.length == 0 %}
+  <aside class="newsfeed">
+    <h2 class="newsfeed__title">Recent news</h2>
+    {% if posts.length == 0 %}
+      <p>There are no recent updates.</p>
+    {% else %}
+      <ul class="reset">
+        {% for post in posts limit:5 reversed %}
+          <li class="newsfeed__item">
+            <a class="link" href="{{ post. url }}">
+              <p class="newsfeed__item-title">{{post.data.title}}</p>
+              <p class="newsfeed__item-date">{% prettyDate post.data.date %}</p>
+            </a>
+          </li>
+
+        {% endfor %}
+
+
+      </ul>
+    {% endif %}
+  </aside>
+{% endunless %}
+
+

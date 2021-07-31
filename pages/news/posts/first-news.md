@@ -1,7 +1,7 @@
 ---
-title: My First Post
+title: Praesent nec nisl a purus
 date: 2010-11-01
-description: This is the first post.
+description: Aliquam lobortis. Praesent turpis. Praesent nonummy mi in odio.
 ---
 
 ## Example: Paragraphs

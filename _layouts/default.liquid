@@ -3,18 +3,20 @@
     {% render 'head', description: description, meta: meta, page: page, title: title %}
     <body class="page-container">
         <!-- {% render 'ie-notice' %}
-        {% render 'skip-to-content' %}
-        {% render 'back-to-top' %} -->
-        {% render 'navigation-quick', data: navigation_quick %}
-        <div class="with-sidebar">
-          {% render 'navigation', data: navigation %}
+        {% render 'skip-to-content' %} -->
+        {% render 'back-to-top' %}
+        <div class="hidden-medium">
+          {% render 'navigation-quick', data: navigation_quick %}
+        </div>
+        <div class="with-sidebar" data-state="desktop">
+          {% render 'navigation', data: navigation, meta: meta, page: page %}
           <div>
-            {% render 'header', title: title, src: hero.src, darken: hero.darken, text-align: hero.text-align %}
+            {% render 'header', title: title, siteTitle: meta.title, src: hero.src, darken: hero.darken, text-align: hero.text-align %}
             <main id="main">
                 {{ content }}
             </main>
           </div>
         </div>
-        <!-- {% render 'footer', builtBy: site.builtBy, navigation: navigation_footer %} -->
+        {% render 'footer', meta: meta, navigation: navigation_quick, staff: web_staff %}
     </body>
 </html>

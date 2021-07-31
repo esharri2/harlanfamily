@@ -73,6 +73,12 @@ const pages = [
     description: "",
   },
   {
+    key: "/news",
+    title: "News & Updates",
+    section: sections.news,
+    description: "",
+  },
+  {
     key: "/newsletter",
     title: "Newsletter",
     section: sections.news,

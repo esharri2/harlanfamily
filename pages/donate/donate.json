@@ -1,0 +1,13 @@
+{
+  "title": "Donate",
+  "description": "This is the template page",
+  "hero": {
+    "darken": "true",
+    "text-align": "center"
+  },
+  "donationPurposes": [
+    "To the Association",
+    "To the Remembrance Fund",
+    "To fund the 2022 Harlan Family Reunion"
+  ]
+}

@@ -1,9 +1,21 @@
-<footer class="border-t border-black border-solid p-4">
-    <div class="container">
-        {% render 'navigation_footer', navigation: navigation%}
-        <p class="text-xs mt-2">Copyright {% currentYear %}</p>
-        <p class="py-1 text-xs">
-            <a class="underline" href="{{builtBy.url}}">Site by {{builtBy.name}}</a>
-        </p>
+{% capture date %}{{ "now" | date: "%Y-%m-%d %H:%M" }}{% endcapture %}
+
+<footer class="footer">
+  <div class="page-container stack">
+    <p class="footer__title">{{ meta.title }}</p>
+    <p>Last updated: {% prettyDate date %}</p>
+
+    <div class="footer__links">
+      {% for item in navigation %}
+        <a class="link" href="{{ item.key }}">{{ item.title }}</a>
+      {% endfor %}
     </div>
+    <div class="footer__hosted-by">
+      <p>Site hosted by</p>
+      <a href="https://www.aeneas.com/">
+        {% image './images/aeneas-logo.png', "Aeneas, Internet and Telephone", "100w" %}
+      </a>
+    </div>
+  </div>
 </footer>
+

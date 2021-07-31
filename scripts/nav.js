@@ -1,64 +1,53 @@
-class Nav {
-  selectors = {
-    nav: "[data-nav]",
-    linkList: "[data-nav-links]",
-    toggle: "[data-nav-toggle]",
-    openIcon: "[data-nav-open-icon]",
-    closeIcon: "[data-nav-close-icon]",
+const initNav = () => {
+  const selectors = {
+    nav: ".nav",
+    linkList: ".nav__link-list",
+    toggle: ".nav__toggle",
+    openIcon: ".nav__open-icon",
+    closeIcon: ".nav__close-icon",
   };
 
-  elements = {
-    nav: document.querySelector(this.selectors.nav),
+  const elements = {};
+  elements.nav = document.querySelector(selectors.nav);
+  elements.linkList = document.querySelector(selectors.linkList);
+  elements.toggle = elements.nav.querySelector(selectors.toggle);
+  elements.openIcon = elements.nav.querySelector(selectors.openIcon);
+  elements.closeIcon = elements.nav.querySelector(selectors.closeIcon);
+
+  const bindEvents = () => {
+    elements.toggle.addEventListener("click", toggle);
   };
 
-  constructor() {
-    this.init();
-  }
-
-  init() {
-    this.elements.linkList = this.elements.nav.querySelector(
-      this.selectors.linkList
-    );
-    this.elements.toggle = this.elements.nav.querySelector(
-      this.selectors.toggle
-    );
-    this.elements.openIcon = this.elements.toggle.querySelector(
-      this.selectors.openIcon
-    );
-    this.elements.closeIcon = this.elements.toggle.querySelector(
-      this.selectors.closeIcon
-    );
-    this.bindEvents();
-  }
-
-  bindEvents() {
-    this.elements.toggle.addEventListener("click", this.toggle.bind(this));
-  }
-
-  toggle() {
-    if (this.elements.toggle.getAttribute("aria-expanded") === "true") {
-      this.close();
+  const toggle = () => {
+    if (elements.toggle.getAttribute("aria-expanded") === "true") {
+      close();
     } else {
-      this.open();
+      open();
     }
-  }
+  };
 
-  toggleIcons() {
-    this.elements.openIcon.classList.toggle("hidden");
-    this.elements.closeIcon.classList.toggle("hidden");
-  }
+  const toggleIcons = () => {
+    elements.openIcon.classList.toggle("hidden");
+    elements.closeIcon.classList.toggle("hidden");
+  };
 
-  open() {
-    this.elements.toggle.setAttribute("aria-expanded", "true");
-    this.toggleIcons();
-    this.elements.linkList.classList.remove("hidden");
-  }
+  const open = () => {
+    elements.toggle.setAttribute("aria-expanded", "true");
+    toggleIcons();
+    elements.linkList.classList.remove("hidden-medium");
+    setTimeout(() => {
+      elements.linkList.classList.add("in");
+    }, 1);
+  };
 
-  close() {
-    this.elements.toggle.setAttribute("aria-expanded", "close");
-    this.toggleIcons();
-    this.elements.linkList.classList.add("hidden");
-  }
-}
+  const close = () => {
+    elements.toggle.setAttribute("aria-expanded", "close");
+    toggleIcons();
+    elements.linkList.classList.add("hidden-medium");
+    elements.linkList.classList.remove("in");
+  };
 
-export default Nav;
+  bindEvents();
+};
+
+export default initNav;

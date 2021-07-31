@@ -1,0 +1,11 @@
+.back-to-top {
+  position: fixed;
+  bottom: var(--space-m);
+  right: var(--space-m);
+
+  &__flag {
+    display: block;
+    position: absolute;
+    top: 2500px;
+  }
+}
