@@ -1,12 +1,22 @@
 .nav {
   --button-bar-height: 50px;
-  --link-list-p-t: var(--space-l);
+  --link-list-p: var(--space-l);
   --p-t: calc(var(--button-bar-height));
   --p-b: var(--space-l);
+  --section-title-border: solid 1px var(--color-accent-light);
+  --nav-position: fixed;
+  --nav-transform: translateX(-100vw);
+  --nav-list-padding: calc(var(--link-list-p, 0) + var(--p-t)) var(--link-list-p, 0) var(--link-list-p, 0);
+  --quick-display: block;
   
   @media (min-width: 768px) {
-      --p-t: 0;
-      --p-b: 0;
+    --p-t: 0;
+    --p-b: 0;
+    --section-title-border: none;
+    --nav-position: static;
+    --nav-transform: none;
+    --nav-list-padding: 0;
+    --quick-display: none;
   }
 
   padding: var(--p-t) var(--space-l) var(--p-b) 0;
@@ -23,7 +33,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 
     header {
       font-family: var(--font-title);
@@ -38,15 +48,22 @@
   }
 
   &__link-list {
-    padding-top: var(--link-list-p-t, 0) !important; /* override list resets */
-    height: 0;
-    transform: translateX(-100vw);
-    transition: transform var(--timing-medium) var(--timing-function), height var(--timing-fast) var(--timing-function);
+    background-color: var(--color-background);
+    bottom: 0;
+    left: 0; 
+    overflow: auto;
+    padding: var(--nav-list-padding) !important;
+    position: var(--nav-position);
+    right: 0;
+    top: 0;
+    transform: var(--nav-transform);
+    transition: transform var(--timing-fast) var(--timing-function);
+    z-index: 2;
 
     &.in {
       transform: translateX(0);
-      height: 100vh;
     }
+
   }
 
   &__logo {
@@ -59,9 +76,10 @@
   }
 
   &__section-title {
-    padding-bottom: var(--space-s);
-    text-transform: uppercase;
+    border-bottom: var(--section-title-border);
     font-weight: bolder;
+    margin-bottom: var(--space-s);
+    text-transform: uppercase;
   }
 
   &__toggle {
@@ -79,6 +97,20 @@
 
     &:before {
       content: "\27A5";
+    }
+  }
+
+  .nav-quick {
+    display: var(--quick-display);
+    padding: 0;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .nav-quick__item {
+      margin-left: 0;
     }
   }
 }

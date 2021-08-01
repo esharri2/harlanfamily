@@ -12,8 +12,14 @@
   }
 
   a {
+    align-items: center;
+    display: flex;
     color: inherit;
     text-decoration: none;
-    text-transform: uppercase;
+
+    svg {
+      margin-left: 6px;
+      width: 16px;
+    }
   }
 }

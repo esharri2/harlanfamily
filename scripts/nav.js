@@ -8,8 +8,9 @@ const initNav = () => {
   };
 
   const elements = {};
-  elements.nav = document.querySelector(selectors.nav);
-  elements.linkList = document.querySelector(selectors.linkList);
+  elements.body = document.querySelector("body");
+  elements.nav = elements.body.querySelector(selectors.nav);
+  elements.linkList = elements.nav.querySelector(selectors.linkList);
   elements.toggle = elements.nav.querySelector(selectors.toggle);
   elements.openIcon = elements.nav.querySelector(selectors.openIcon);
   elements.closeIcon = elements.nav.querySelector(selectors.closeIcon);
@@ -38,6 +39,7 @@ const initNav = () => {
     setTimeout(() => {
       elements.linkList.classList.add("in");
     }, 1);
+    elements.body.classList.add("scroll-lock");
   };
 
   const close = () => {
@@ -45,6 +47,7 @@ const initNav = () => {
     toggleIcons();
     elements.linkList.classList.add("hidden-medium");
     elements.linkList.classList.remove("in");
+    elements.body.classList.remove("scroll-lock");
   };
 
   bindEvents();

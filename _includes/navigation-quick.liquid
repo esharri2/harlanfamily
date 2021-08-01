@@ -1,7 +1,10 @@
 <nav class="nav-quick">
   <ul class="reset nav-quick__list">
     {% for item in data %}
-      <li class="nav-quick__item"><a class="link" href={{item.key}}>{{item.title}}</a></li>
+      <li class="nav-quick__item">
+        {% assign iconPath = '/_includes/icons/' | append: item.icon %}
+        <a class="link" href={{item.key}}>{{item.title}}{% unless item.icon == empty %}{{ iconPath | svgContents }}{% endunless %}</a>
+      </li>
     {% endfor %}
   </ul>
 </nav>

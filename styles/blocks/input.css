@@ -1,6 +1,7 @@
 .input {
   display: block;
   max-width: 80vw;
+  outline-color: var(--color-accent-secondary);
   padding: var(--space-s) var(--space-m);
   width: 300px;
 }

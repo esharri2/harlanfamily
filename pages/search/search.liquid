@@ -1,2 +1,6 @@
-<script async src="https://cse.google.com/cse.js?cx=814d54c2b3c2e2f94"></script>
-<div class="gcse-search"></div>
+<form action="https://duckduckgo.com/" method="get" class="search stack">
+    <label for="search-term" class="sr-only">Search terms:</label>
+    <input type="search" name="q" id="search-term" class="input" autocomplete="off">
+    <input aria-hidden="true" hidden name="sites" value="{{ meta.url }}">
+    <button type="submit" class="button">Search {{ '/_includes/icons/search.svg' | svgContents}}</button>
+</form>

@@ -16,6 +16,7 @@
     <ul
         class="nav__link-list reset stack hidden-medium"
         id="menuItems">
+        {% render 'navigation-quick', data: navigation-quick-data %}
         {% for section in data %}
             <p class="nav__section-title">{{section.name}}</p>
             {% for item in section.pages %}

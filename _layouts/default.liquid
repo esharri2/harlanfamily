@@ -9,7 +9,7 @@
           {% render 'navigation-quick', data: navigation_quick %}
         </div>
         <div class="with-sidebar" data-state="desktop">
-          {% render 'navigation', data: navigation, meta: meta, page: page %}
+          {% render 'navigation', data: navigation, meta: meta, navigation-quick-data: navigation_quick, page: page %}
           <div>
             {% render 'header', title: title, siteTitle: meta.title, src: hero.src, darken: hero.darken, text-align: hero.text-align %}
             <main id="main">
