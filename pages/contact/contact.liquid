@@ -1,4 +1,32 @@
----
-title: Contact
----
-wip
+{% for member in web_staff %}
+  {% if member.role = 'coordinator' %}
+    {% capture coordinator %}<a href="mailto:{{member.email}}" target="_blank">{{member.name}}</a>{% endcapture %}
+  {% endif %}
+{% endfor %}
+<div class="stack">
+  <h2>General</h2>
+  <p>Send general inquiries to {{coordinator}}.</p>
+  
+  <h2>Website</h2>
+  <p>This site was established by The Harlan Family in America in October, 1997. Our staff members are:</p>
+  <ul>
+    {% for member in web_staff %}
+      <li>
+        <a target="_blank" href="mailto:{{member.email}}">{{member.name}}, {{member.title}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <p>The staff continually strives to improve and expand its contents and invites you to voice your comments and opinions. Please address your views to
+    {{coordinator}}.</p>
+  
+  <h2>Newsletter</h2>
+  <p>Many members of the Harlan Family have been (and could be) featured in human interest stories. Please send accounts of Harlans involved in good deeds, adventures, service, etc. to: <a href="mailto:dorothysperry49@gmail.com">Dorothy Sperry</a>.</p>
+  
+  <h2>Social media</h2>
+  <p>Connect with us on social media:</p>
+  <ul>
+    {% for social in social_media %} 
+      <li><a href="{{social.url}}">{{social.name}}</a></li>
+    {% endfor %}
+  </ul>
+</div>

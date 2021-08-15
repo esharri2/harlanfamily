@@ -93,7 +93,7 @@ const pages = [
   {
     key: "/stories",
     title: "Stories",
-    section: sections.news,
+    section: sections.history,
     description: "",
   },
   {
