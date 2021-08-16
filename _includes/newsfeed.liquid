@@ -7,7 +7,7 @@
       <ul class="reset">
         {% for post in posts limit:5 reversed %}
           <li class="newsfeed__item">
-            <a class="link" href="{{ post. url }}">
+            <a class="link" href="{{ post.url }}">
               <p class="newsfeed__item-title">{{post.data.title}}</p>
               <p class="newsfeed__item-date">{% prettyDate post.data.date %}</p>
             </a>
