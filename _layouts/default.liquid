@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% render 'head', description: description, meta: meta, page: page, title: title %}
+    {% include'head', description: description, meta: meta, page: page, title: title %}
     <body class="page-container">
-        <!-- {% render 'ie-notice' %}
-        {% render 'skip-to-content' %} -->
-        {% render 'back-to-top' %}
+        <!-- {% include'ie-notice' %}
+        {% include'skip-to-content' %} -->
+        {% include'back-to-top' %}
         <div class="hidden-medium">
-          {% render 'navigation-quick', data: navigation_quick %}
+          {% include'navigation-quick', data: navigation_quick %}
         </div>
         <div class="with-sidebar" data-state="desktop">
-          {% render 'navigation', data: navigation, meta: meta, navigation-quick-data: navigation_quick, page: page, social-media: social_media %}
+          {% include'navigation', data: navigation, meta: meta, navigation-quick-data: navigation_quick, page: page, social-media: social_media %}
           <div>
-            {% render 'header', title: title, siteTitle: meta.title, src: hero.src, darken: hero.darken, text-align: hero.text-align %}
+            {% include'header', title: title, siteTitle: meta.title, src: hero.src, darken: hero.darken, text-align: hero.text-align %}
             <main id="main">
                 {{ content }}
             </main>
           </div>
         </div>
-        {% render 'footer', meta: meta, navigation: navigation_quick %}
+        {% include'footer', meta: meta, navigation: navigation_quick %}
     </body>
 </html>
