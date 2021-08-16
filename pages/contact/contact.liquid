@@ -1,5 +1,5 @@
 {% for member in web_staff %}
-  {% if member.role = 'coordinator' %}
+  {% if member.role == 'coordinator' %}
     {% capture coordinator %}<a href="mailto:{{member.email}}" target="_blank">{{member.name}}</a>{% endcapture %}
   {% endif %}
 {% endfor %}

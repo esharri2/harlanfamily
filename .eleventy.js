@@ -5,6 +5,18 @@ const addTransforms = require("./config/transforms");
 const addFilters = require("./config/filters");
 
 module.exports = function (eleventyConfig) {
+  const { Liquid } = require("liquidjs");
+  eleventyConfig.setLibrary(
+    "liquid",
+    new Liquid({
+      dynamicPartials: true,
+      strictFilters: true,
+    })
+  );
+
+  eleventyConfig.setLibrary("liquid", liquidJs(options));
+
+
   addPlugins(eleventyConfig);
   addPassThroughCopies(eleventyConfig);
   addShortCodes(eleventyConfig);
