@@ -4,7 +4,18 @@ const addPassThroughCopies = require("./config/passthroughs");
 const addTransforms = require("./config/transforms");
 const addFilters = require("./config/filters");
 
+
 module.exports = function (eleventyConfig) {
+  const { Liquid } = require("liquidjs");
+  eleventyConfig.setLibrary(
+    "liquid",
+    new Liquid({
+      root: "../_includes",
+      extname: ".liquid",
+      strictFilters: true,
+    })
+  );
+
   addPlugins(eleventyConfig);
   addPassThroughCopies(eleventyConfig);
   addShortCodes(eleventyConfig);
