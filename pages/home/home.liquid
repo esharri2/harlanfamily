@@ -4,8 +4,8 @@
 <div class="with-sidebar with-sidebar" data-state="right desktop">
 
 {% markdown %}
-  {%- include "content/homepage.md" -%}
+  {%- render "content/homepage.md" -%}
 {% endmarkdown %}
 
 
-{% include 'newsfeed', posts: collections.post %}
+{% render 'newsfeed', posts: collections.post %}
