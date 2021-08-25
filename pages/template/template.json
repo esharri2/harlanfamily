@@ -3,6 +3,8 @@
   "description": "This is the template page",
   "hero": {
     "darken": "true",
-    "text-align": "center"
-  }
+    "text-align": "center",
+    "src": "hero-headwaters-forest.jpg"
+  },
+  "ctas": ["template", "about"]
 }

@@ -1,0 +1,14 @@
+{% assign handle =  data.firstName | append: data.lastName | slugify %}
+<li class="board-member {{data.group}}">
+  <h3 class="board-member__title">{% if data.role %}{{ data.role }}:{% endif %} {{ data.firstName }} {{data.lastName}}</h3> 
+    {% if data.group != 'officer' and data.state %}
+    <p class="board-member__state">({{ data.state }})</p>
+  {% endif %}
+  <a class="link" href="#{{handle}}">Bio</a>
+  {% if data.address1 %}
+    <p>{{ data.address1 }}</p>
+  {% endif %}
+  {% if data.address2 %}
+    <p>{{ data.address2 }}</p>
+  {% endif %}
+</li>

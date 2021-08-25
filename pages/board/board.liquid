@@ -1,0 +1,61 @@
+{% for person in board-members %}
+  {% if person.role == "President" %}
+    {% assign president = person %}
+  {% elsif person.role == "Vice-President"%}
+    {% assign vp = person %}
+  {% elsif person.role == "Secretary"%}
+    {% assign secretary = person %}
+  {% elsif person.role == "Treasurer" %}
+    {% assign treasurer = person%}
+  {% endif %}
+{% endfor %}
+<div class="stack">
+  <h2>Officers</h2>
+  <div>
+    <ul class="stack reset">
+      {% render 'board-member', data: president %}
+      {% render 'board-member', data: vp %}
+      {% render 'board-member', data: secretary %}
+      {% render 'board-member', data: treasurer %}
+    </ul>
+  </div>
+  <h2>Board of Directors</h2>
+  <div>
+    <ul class="stack reset">
+      {% for person in board-members %}
+        {% if person.group == "board" %}
+          {% render 'board-member', data: person %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+    <h2>Board Member Emeritus</h2>
+  <div>
+    <ul class="stack reset">
+      {% for person in board-members %}
+        {% if person.group == "board_emeritus" %}
+          {% render 'board-member', data: person %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <h2>Board Member Eternal</h2>
+  <div>
+    <ul class="stack reset">
+      {% for person in board-members %}
+        {% if person.group == "board_eternal" %}
+          {% render 'board-member', data: person %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+    <h2>Biographical Information</h2>
+  <div>
+      {% for person in board-members %}
+        {% if person.bio != empty %}
+          <div id="{{person.firstName | append: person.lastName | slugify }}">{{person.bio}}</div>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

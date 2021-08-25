@@ -1,0 +1,25 @@
+
+{% if ctas != nil %}
+  <div class="ctas">
+    {% for cta in ctas %}
+      {% for page in pages %}
+        {% if cta == page.fileSlug %}
+          <a class="cta reset" href="{{page.url}}">
+            <div class="background-image darken">
+            {% assign file = page.data.hero.src | default: 'hero-mountain-range.jpg'%}
+            {% assign path = "./images/" | append: file %}
+            {% image path, "", "300px" %}
+            </div>
+            <div class="cta__text">
+              <p class="cta__title">{{page.data.title}}</p>
+              <p class="cta__description">{{page.data.description}}</p>
+            </div>
+            <span class="cta__icon">{{ '/_includes/icons/chevron-right.svg' | svgContents }}</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+

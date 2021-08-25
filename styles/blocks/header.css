@@ -11,7 +11,7 @@
   align-items: center;
   height: var(--height);
   position: relative;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-xxl);
   padding: var(--space-l);
 
   &.center {

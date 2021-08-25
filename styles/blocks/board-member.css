@@ -1,0 +1,14 @@
+ul li.board-member {
+  padding-bottom: var(--space-m);
+}
+
+.board-member {
+
+  &__state {
+    display: inline;
+  }
+
+  &__title {
+    display: inline;
+  }
+}

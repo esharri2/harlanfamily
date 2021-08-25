@@ -1,8 +1,9 @@
 {
   "title": "About",
-  "description": "TODO, about page",
+  "description": "Learn about the history and mission of the The Harlan Family in America Association",
   "hero": {
     "darken": "true",
     "text-align": "center"
-  }
+  },
+  "ctas": ["bylaws", "board"]
 }

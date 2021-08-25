@@ -58,8 +58,17 @@ h4 {
   font-family: var(--font-title);
 }
 
-h1 {
+h1, .h1 {
   font-size: var(--font-size-xl);
+}
+
+h2, .h2 {
+  font-size: var(--font-size-l);
+  line-height: 1;
+}
+
+h3, .h3 {
+  font-size: var(--font-size-m);
 }
 
 p {
