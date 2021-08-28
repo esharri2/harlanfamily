@@ -4,6 +4,7 @@
   border: none;
   box-shadow: var(--shadow-s);
   color: var(--color-background);
+  cursor: pointer;
   display: flex;
   padding: var(--space-m);
   text-decoration: none;

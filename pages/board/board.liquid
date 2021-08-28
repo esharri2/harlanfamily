@@ -1,3 +1,5 @@
+{% assign board-members = board-members | sort: "lastName" %}
+
 {% for person in board-members %}
   {% if person.role == "President" %}
     {% assign president = person %}
@@ -49,13 +51,16 @@
       {% endfor %}
     </ul>
   </div>
-    <h2>Biographical Information</h2>
-  <div>
+    <!-- <h2>Biographical Information</h2>
+  <div class="stack">
       {% for person in board-members %}
         {% if person.bio != empty %}
-          <div id="{{person.firstName | append: person.lastName | slugify }}">{{person.bio}}</div>
+          <div class="stack" id="{{person.firstName | append: person.lastName | slugify }}">
+            <h3>{{ person.firstName }} {{ person.lastName }}</h3>
+            {{person.bio}}
+          </div>
         {% endif %}
       {% endfor %}
     </ul>
-  </div>
+  </div> -->
 </div>

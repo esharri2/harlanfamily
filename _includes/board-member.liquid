@@ -4,11 +4,16 @@
     {% if data.group != 'officer' and data.state %}
     <p class="board-member__state">({{ data.state }})</p>
   {% endif %}
-  <a class="link" href="#{{handle}}">Bio</a>
   {% if data.address1 %}
     <p>{{ data.address1 }}</p>
   {% endif %}
   {% if data.address2 %}
     <p>{{ data.address2 }}</p>
+  {% endif %}
+  {% if data.bio %}
+  <details class="stack board-member__bio">
+    <summary class="link">Bio</summary>
+    {{ data.bio }}
+    </details>
   {% endif %}
 </li>

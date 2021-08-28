@@ -4,6 +4,10 @@ ul li.board-member {
 
 .board-member {
 
+  &__bio > *:last-child {
+    margin-bottom: var(--space-m);
+  }
+
   &__state {
     display: inline;
   }

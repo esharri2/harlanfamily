@@ -1,5 +1,6 @@
 .link {
   color: inherit;
+  cursor: pointer;
   text-decoration: none;
   transition: color var(--timing-fast);
 
