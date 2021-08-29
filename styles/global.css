@@ -108,6 +108,18 @@ select {
   font: inherit;
 }
 
+table {
+  border-collapse: collapse;
+  /* border-style: ridge; */
+}
+
+th, td {
+  border: solid 1px var(--color-accent-light);
+  padding: var(--space-s);
+}
+
+
+
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {

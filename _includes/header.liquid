@@ -1,5 +1,5 @@
 <header class="header {{text-align}}">
-  <div class="background-image {% unless darken == false %}darken{% endunless %}">
+  <div class="background-image {% unless darken == false %}darken{% endunless %} {{ position }}">
     {% assign file = src | default: 'hero-mountain-range.jpg'%}
     {% assign path = "./images/" | append: file %}
     {% image path, "", "100vw" %}

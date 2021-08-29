@@ -1,0 +1,10 @@
+{
+  "title": "Harlan Cousins",
+  "description": "TBD",
+  "hero": {
+    "darken": "true",
+    "text-align": "center",
+    "X_src": "hero-headwaters-forest.jpg"
+  },
+  "X_ctas": ["template", "about"]
+}

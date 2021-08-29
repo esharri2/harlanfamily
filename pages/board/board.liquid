@@ -23,7 +23,7 @@
   </div>
   <h2>Board of Directors</h2>
   <div>
-    <ul class="stack reset">
+    <ul class="stack reset grid-1-2">
       {% for person in board-members %}
         {% if person.group == "board" %}
           {% render 'board-member', data: person %}

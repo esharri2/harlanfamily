@@ -1,0 +1,10 @@
+.search-form {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  
+  input {
+    flex-grow:1;
+  }
+}

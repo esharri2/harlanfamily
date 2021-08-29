@@ -1,0 +1,58 @@
+<div class="stack">
+  <p>All Harlans/Harlands/Harlins or relations can have their names and ancestors listed in these pages if they so desire. We ask that you provide your line of ancestors covered in the "History and Genealogy of the Harlan Family" by Alpheus H. Harlan, if possible. If your line is not covered in the book, list the name of your oldest known ancestors along with the location and date of their births. Please include the name of your state of residence which is most useful where duplications in names occur.</p>
+  <p>If you wish to contact a person listed, send your request to Gerry Harlan Lundgren. She maintains an updated list of email addresses and will forward your request on to the proper person. That person will contact you directly if they so desire.</p>
+  <form class="search-form">
+    <label for="cousin-search">Search all or part of a name
+    </label>
+    <input
+      class="input"
+      id="cousin-search"
+      name="query"
+      type="text" />
+    <button class="button" type="submit">Search</button>
+    <button class="button" type="reset">Reset</button>
+  </form>
+  <table>
+    <tr>
+      <th style="width: 25%">Name</th>
+      <th>From</th>
+      <th>Descendant of (feference # in the book by Alpheus Harlan or oldest known relative)</th>
+    </tr>
+    {% for cousin in cousins %}
+      <tr data-name="{{ cousin.name | downcase }}">
+        <td>{{cousin.name}}</td>
+        <td>{{cousin.from}}</td>
+        <td>{{cousin.descendantOf}}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+{% capture js %}
+  (function(){
+
+  const rows = document.querySelectorAll('[data-name]');
+  const form = document.querySelector("form.search-form");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const query = (event.target.elements.query.value || "").toLowerCase();
+    
+    rows.forEach(row => {
+      if (row.dataset.name.includes(query)) {
+        row.classList.remove('hidden')
+      } else {
+        row.classList.add('hidden')
+      }
+    })
+  })
+
+  form.addEventListener("reset", (event) => {
+    rows.forEach(row=>row.classList.remove('hidden'))
+  })
+
+})()
+{% endcapture %}
+
+<script>
+  {{ js | jsmin }}
+</script>

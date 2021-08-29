@@ -25,4 +25,5 @@
 @import 'blocks/nav';
 @import 'blocks/nav-quick';
 @import 'blocks/newsfeed';
+@import 'blocks/search-form';
 @import 'blocks/skip-to-content';

@@ -6,7 +6,8 @@
   bottom: 0;
   z-index: -1;
 
-  picture, img {
+  picture,
+  img {
     height: 100%;
     width: 100%;
   }
@@ -16,6 +17,18 @@
   }
 
   filter: sepia(50%);
+
+  &.top {
+    img {
+      object-position: top;
+    }
+  }
+
+  &.bottom {
+    img {
+      object-position: bottom;
+    }
+  }
 }
 
 .background-image.darken {

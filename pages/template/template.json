@@ -4,7 +4,8 @@
   "hero": {
     "darken": "true",
     "text-align": "center",
-    "src": "hero-headwaters-forest.jpg"
+    "src": "hero-headwaters-forest.jpg",
+    "image-position": "top"
   },
   "ctas": ["template", "about"]
 }

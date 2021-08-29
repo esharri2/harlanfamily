@@ -6,7 +6,7 @@
   color: var(--color-background);
   cursor: pointer;
   display: flex;
-  padding: var(--space-m);
+  padding: var(--space-s) var(--space-m);
   text-decoration: none;
   transition: box-shadow var(--timing-fast);
 
