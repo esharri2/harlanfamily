@@ -1,3 +1,14 @@
+<style>
+  .table-wrapper {
+    width: 100%;
+    overflow: auto;
+  }
+</style>
+
+{% assign col1 = "Name" %}
+{% assign col2 = "From" %}
+{% assign col3 = "Descendant of (Reference # in the book by Alpheus Harlan or oldest known relative)" %}
+
 <div class="stack">
   <p>All Harlans/Harlands/Harlins or relations can have their names and ancestors listed in these pages if they so desire. We ask that you provide your line of ancestors covered in the "History and Genealogy of the Harlan Family" by Alpheus H. Harlan, if possible. If your line is not covered in the book, list the name of your oldest known ancestors along with the location and date of their births. Please include the name of your state of residence which is most useful where duplications in names occur.</p>
   <p>If you wish to contact a person listed, send your request to Gerry Harlan Lundgren. She maintains an updated list of email addresses and will forward your request on to the proper person. That person will contact you directly if they so desire.</p>
@@ -12,11 +23,12 @@
     <button class="button" type="submit">Search</button>
     <button class="button" type="reset">Reset</button>
   </form>
+  <div class="table-wrapper">
   <table>
     <tr>
-      <th style="width: 25%">Name</th>
-      <th>From</th>
-      <th>Descendant of (feference # in the book by Alpheus Harlan or oldest known relative)</th>
+      <th style="width: 25%">{{ col1 }}</th>
+      <th>{{ col2 }}</th>
+      <th>{{ col3 }}</th>
     </tr>
     {% for cousin in cousins %}
       <tr data-name="{{ cousin.name | downcase }}">
@@ -26,6 +38,7 @@
       </tr>
     {% endfor %}
   </table>
+  </div>
 </div>
 {% capture js %}
   (function(){
