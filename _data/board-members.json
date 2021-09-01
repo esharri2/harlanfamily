@@ -1,13 +1,13 @@
 [
   {
     "firstName": "Pat",
-    "lastName": "Fleutsch",
-    "address1": "1003 Hamlet Ct",
+    "lastName": "Fluetsch",
+    "address1": "3400 Wagner Heights Rd., Apt. 358",
     "address2": "Stockton, CA 95209",
     "role": "President",
     "group": "officer",
     "state": "CA",
-    "bio": "<p>Pat Harrison Fluetsch became involved with the Harlan Family Board in 2003 when she attended a planning meeting for the 2007 Reunion in Reno, Nevada. Pat ended up co-chairing Reunion 320 and became a board member in 2007. Through the urging of other board members and with the suppport of her husband, Mike, who passed away in 2013, Pat accepted the Presidency of our Association in 2012.</p><p>Pat has been interested in her Harlan family history since fourth grade when she heard stories from her Grandfather Leroy Harlan, about his father Elisha crossing the country as a 4 year old boy in the Harlan wagon train lead by her great, great grandfather George Harlan. She is proud to be in the fifth generation of \"The Harlan Family in California.\" Pat spent over 32 years teaching young children. She also mentored new teachers and gave presaentaions on effective teaching strategies to teachers locally, statewide and nationally. In 1993 she was named her school district's teacher of the year.</p><p>Pat enjoys spending time with her family. Her son Chris, his wife Erika and their dauighters Helen and Clara live in Davis, Ca. Her daughter Sarah, her husband Ed and their sons Edward and Keegan live in Stockton, CA. She loves to travel, spend time with friends, and volunteer in her community.</p>"
+    "bio": "<p>Pat Harrison Fluetsch became involved with the Harlan Family Board in 2003 when she attended a planning meeting for the 2007 Reunion in Reno, Nevada. Pat ended up co-chairing Reunion 320 and became a board member in 2007. Through the urging of other board members and with the suppport of her husband, Mike, who passed away in 2013, Pat accepted the Presidency of our Association in 2012.</p><p>Pat has been interested in her Harlan family history since fourth grade when she heard stories from her Grandfather Leroy Harlan, about his father Elisha crossing the country as a 4 year old boy in the Harlan wagon train lead by her great, great grandfather George Harlan. She is proud to be in the fifth generation of \"The Harlan Family in California.\" Pat spent over 32 years teaching young children. She also mentored new teachers and gave presaentaions on effective teaching strategies to teachers locally, statewide and nationally. In 1993 she was named her school district's teacher of the year.</p><p>Pat enjoys spending time with her family. Her son Chris, his wife Erika and their children Helen and Clara live in Davis, Ca. Her daughter Sarah, her husband Ed and their sons Edward and Keegan live in Stockton, CA. She loves to travel, spend time with friends, and volunteer in her community.</p>"
   },
   {
     "firstName": "Mary Harlan",
@@ -117,9 +117,7 @@
   {
     "firstName": "Ruth Harlan",
     "lastName": "Lamb",
-    "group": "board_emeritus",
-    "state": "MO",
-    "bio": "<p>Ruth attended one of Dan Harlan’s planning meetings prior to Celebration 300 in 1987 and has helped with national reunions in 1997, 2002, 2007 and 2012. She served as secretary of the Harlan organization from 1998 to 2007. After the editors of The Harlan Record resigned in 1999, Ruth volunteered to prepare and mail the newsletter twice a year until 2013.</p><p>Born in Kansas City, Mo., she has resided in nearby Independence since she was four years old. She received B.S. and M.S. degrees in Education from Central Missouri State University, with majors in art and instructional technology. After teaching elementary art for 30 years, she retired in 1991. Hobbies include calligraphy and lettering, as well as other arts and crafts. She volunteers at community agencies and does computer work for organizations and her church.</p><p>Ruth has a daughter, Kathy Brick of Overland Park, KS; a son, Mike Lamb of Basehor, KS; and five grandchildren.</p>"
+    "group": "board_eternal"
   },
   {
     "firstName": "Liz Harlan",

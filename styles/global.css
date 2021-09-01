@@ -79,7 +79,7 @@ p {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 
-  color: var(--color-minsk);
+  color: var(--color-accent-secondary);
 
   &:hover {
     color: var(--color-accent);
@@ -110,15 +110,12 @@ select {
 
 table {
   border-collapse: collapse;
-  /* border-style: ridge; */
 }
 
 th, td {
   border: solid 1px var(--color-accent-light);
   padding: var(--space-s);
 }
-
-
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -134,3 +131,10 @@ th, td {
     scroll-behavior: auto !important;
   }
 }
+
+/* Random stuff */
+
+ol ol { 
+  list-style-type: upper-alpha; 
+}
+

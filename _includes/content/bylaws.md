@@ -24,7 +24,10 @@ The organization shall be supported by voluntary donations from Harlan family me
 ### Officers and Meetings
 
 1. The elected officers of this organization shall consist of president, vice-president, secretary, and treasurer. The slate of officers shall be presented for election at the national reunion which will be held every five years.
-1. In addition to the elected officers, a board of directors consisting of at least five members will be appointed by a majority vote of the elected officers and established board members.
+1.  In addition to the elected officers, a board of directors consisting of at least five members will be appointed by a majority vote of the elected officers and established board members. Potential board members must: 
+    1. have attended at least one board meeting,
+    1. have attended or helped with the planning of at least one national reunion, and
+    1. have submitted a short letter of interest and biography.
 1. The president, in consultation with the officers and board of directors, shall periodically convene business meetings in the interval between national reunions, when deemed appropriate for the purpose of conducting business, filling vacancies among the board of directors, preparing a slate of officers to be presented at national reunions, and determining action and activities to further the purposes of The Harlan Family in America. The officers and directors shall set the dates and places for national business meetings. 
  
 ## Article V
