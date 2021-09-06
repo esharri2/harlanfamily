@@ -30,10 +30,6 @@ html {
   color: var(--color-text);
   font-family: var(--font-body);
   font-size: 10px;
-}
-
-/* Set core root defaults */
-html:focus-within {
   scroll-behavior: smooth;
 }
 
@@ -65,6 +61,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: var(--font-size-l);
   line-height: 1;
+  margin-top: var(--space-xxl);
 }
 
 h3, .h3 {
@@ -78,6 +75,8 @@ p {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  word-wrap: break-word;
+
 
   color: var(--color-accent-secondary);
 
@@ -112,7 +111,7 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th:not([border]), td:not([border]) {
   border: solid 1px var(--color-accent-light);
   padding: var(--space-s);
 }

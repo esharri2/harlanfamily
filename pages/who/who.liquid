@@ -1,0 +1,28 @@
+<div class="stack">
+  {% markdown %}
+    {%- render "content/who-intro.md" -%}
+  {% endmarkdown %}
+    <h2>Contents</h2>
+    <div class="col-1-3 stack">
+    {% for article in whos-who %}
+      {% assign slug = article.title | slugify %}
+      <a style="display:block" href="#{{slug}}">{{article.title}}</a>
+    {% endfor %}
+    </div>
+  {% for article in whos-who %}
+    {% assign slug = article.title | slugify %}
+    <article id={{slug}} class="article stack">
+      <h2 class="article__title">{{article.title}}</h2>
+      {% if article.image %} 
+        {% assign path = "./images/" | append: article.image %}
+        {% image path, "", "300px" %}      
+      {% endif %}
+      {{ article.text }}
+      {% if article.by %}
+        <p class="article__by">Submitted by {{ article.by }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+
+

@@ -4,6 +4,8 @@ import "../styles/index.css";
 
 import initNav from "./nav";
 import backToTop from "./backToTop";
+import initModals from "./modal";
 
 backToTop();
 initNav();
+initModals();

@@ -35,4 +35,4 @@ The organization shall be supported by voluntary donations from Harlan family me
 
 Upon the dissolution of this organization, assets shall be distributed for one or more exempt purposes within the meaning of section 501(c)(3) of the Internal Revenue Code, or corresponding section of any future federal tax code, or shall be distributed to the federal government or to a state or local government, for a public purpose.
 
-Revised March, 2016
+Revised June, 2021

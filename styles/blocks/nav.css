@@ -9,7 +9,7 @@
   --nav-list-padding: calc(var(--link-list-p, 0) + var(--p-t)) var(--link-list-p, 0) var(--link-list-p, 0);
   --quick-display: block;
   
-  @media (min-width: 768px) {
+  @media (min-width: 1008px) {
     --p-t: 0;
     --p-b: 0;
     --section-title-border: none;

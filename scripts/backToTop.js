@@ -10,7 +10,9 @@ const backToTop = () => {
   };
 
   let observer = new IntersectionObserver((entries) => {
+  
     const { boundingClientRect, isIntersecting } = entries[0];
+    console.log("yo", isIntersecting);
     if (isIntersecting) {
       // Unhide
       backToTopEl.classList.remove(...toggleClasses);

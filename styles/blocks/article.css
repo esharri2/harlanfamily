@@ -1,0 +1,12 @@
+.article {
+
+  img {
+    float: left;
+    height: auto;
+    padding: 0 var(--space-m) var(--space-m) 0;
+  }
+
+  &__by {
+    font-style: italic;
+  }
+}

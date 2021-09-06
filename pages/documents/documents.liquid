@@ -1,0 +1,47 @@
+<style>
+  .italic {
+    font-style: italic;
+  }
+</style>
+<div class="stack">
+  {% markdown %}
+  {%- render 'content/documents-intro.md'-%}
+  {% endmarkdown %}
+  <h2>List of documents</h2>
+  <div class="col-1-3 stack">
+    {% for document in documents %}
+      {% assign slug = document.title | slugify %}
+      <a href="#{{slug}}" style="display:block">{{document.title}}</a>
+    {% endfor %}
+  </div>
+  {% for document in documents %}
+    {% assign slug = document.title | slugify %}
+    <article id={{slug}} class="stack">
+      <h2>{{document.title}}</h2>
+      {{document.text}}
+      {% if document.image %}
+        {% assign path = "./images/" | append: document.image %}
+        <figure class="stack" data-modal>
+          {% image path, "", "600px" %}
+            <caption>{{document.image_caption}}</caption>
+          <button class="button" data-modal-trigger>Enlarge image</button>
+        </figure>
+      {% endif %}
+      {% if document.image2 %}
+        {% assign path = "./images/" | append: document.image2 %}
+        <figure class="stack" data-modal>
+          {% image path, "", "600px" %}
+          {% if document.image2_caption%}
+            <caption>{{document.image2_caption}}</caption>
+          {% endif %}
+          <button class="button" data-modal-trigger>Enlarge image</button>
+        </figure>
+      {% endif %}
+      {% if document.translation %}
+        <div class="italic stack">
+          {{document.translation}}
+        </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>

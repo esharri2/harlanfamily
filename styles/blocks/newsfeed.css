@@ -5,7 +5,7 @@
   --gutter-left: none;
   --gutter-top: var(--space-m);
 
-  @media (min-width: 768px) {
+  @media (min-width: 1008px) {
     --border-top-color: transparent;
     --border-left-color: var(--color-accent-light);
     --gutter-left: var(--space-m);
@@ -33,6 +33,7 @@
   }
 
   &__title {
+    margin-top: 0;
     margin-bottom: var(--space-m);
   }
 }

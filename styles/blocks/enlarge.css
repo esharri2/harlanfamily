@@ -1,0 +1,19 @@
+.enlarge {
+  color: inherit;
+  display: block;
+  font-style: italic;
+  overflow: hidden;
+  text-decoration: none;
+
+  img:hover {
+    transform: scale(1.05);
+  }
+  
+
+  img {
+    float: unset;
+    transition: transform var(--timing-medium);
+  }
+
+
+}

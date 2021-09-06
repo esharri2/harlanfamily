@@ -1,0 +1,9 @@
+{
+  "title": "Who's Who of Harlans",
+  "description": "...",
+  "hero": {
+    "darken": "true",
+    "text-align": "center"
+  },
+  "ctas": ["stories", "cousins"]
+}
