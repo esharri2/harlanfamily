@@ -1,4 +1,4 @@
-Submitted on 1 June 1999 by John H Harland, e-mail: [jharland@smartt.com](mailto:jharland@smartt.com)  Kelowna B C
+*Submitted on 1 June 1999 by John H Harland, e-mail: [jharland@smartt.com](mailto:jharland@smartt.com)  Kelowna BC*
 
 Is it necessary, or even possible, to try to explain the original meaning of the name Harlan?  The matter can at best be of peripheral interest to those who follow the fortunes of the Harlans in America ...and particularly those who feel that the history of the family properly starts with the arrival of George and Michael Harland in the Colonies in 1687\. [Remember that the organization founded at Philadelhpia in 1887 was named very specificallly "The Association of the Descendants of George and Micheal Harlan in the United States."]. However,  I venture to offer the following preliminary comments in the hope they may, sometime in the future, encourage some family-member with an interest in the broader picture, to research things in a more serious and deliberate manner.
 

@@ -3,7 +3,7 @@ const Image = require("@11ty/eleventy-img");
 const image = (eleventyConfig) => {
   eleventyConfig.addShortcode(
     "image",
-    async (src, alt, sizes, widths = "400,600,800,1200") => {
+    async (src, alt = "", sizes, widths = "400,600,800,1200") => {
       const widthsArray = widths.split(",").map((width) => Number(width));
       let metadata = await Image(src, {
         widths: widthsArray,

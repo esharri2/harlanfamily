@@ -7,15 +7,14 @@ pagination:
   reverse: true
 ---
 
-<ul>
   {% for post in posts %}
-    <li id="{{post.fileSlug}}" class="pt-4">
-      <a class="text-xl" href="{{post.url}}">{{post.data.title}}</a>
-      <p>{% prettyDate post.data.date %} | {{post.data.description}}</p>
-      <a href="{{post.url}}">Read more</a>
-    </li>
+    <article class="article stack">
+      <h2>{{post.data.title}}</h2>
+      <p><span class="italic">{% prettyDate post.data.date %}</span> | <span class="italic">{{post.data.description}}</span></p>
+      {{post.templateContent}}
+    </article>
   {% endfor %}
-</ul>
+
 {% comment %}
 {% render 'pagination', pagination: pagination %}
 

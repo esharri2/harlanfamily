@@ -1,0 +1,11 @@
+{
+  "title": "Harlan Record Archive",
+  "description": "todo",
+  "hero": {
+    "darken": "true",
+    "text-align": "center",
+    "src": "hero-headwaters-forest.jpg",
+    "image-position": "top"
+  },
+  "ctas": ["news", "about"]
+}

@@ -1,0 +1,11 @@
+.back {
+  align-items: center;
+  display: inline-flex;
+  margin-bottom: var(--space-xl);
+  text-transform: uppercase;
+
+  svg {
+    margin-right: 1ch;
+    width: 20px;
+  }
+}

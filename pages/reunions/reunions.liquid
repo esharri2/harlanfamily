@@ -1,0 +1,45 @@
+{% assign reunions = collections.reunion | sort: fileSlug | reverse %}
+
+<div class="stack">
+  <h2>Contents</h2>
+  <ul class="toc stack">
+  {% for reunion in reunions %}
+    {% assign slug = reunion.data.title | slugify %}
+    <li>
+      <a href="#{{slug}}">{{ reunion.data.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  {% for reunion in reunions %}
+    {% assign slug = reunion.data.title | slugify %}
+    <article class="article stack" id={{ slug }}>
+      <h2>{{ reunion.data.title }}</h2>
+      {% if reunion.data.cover %}
+        {% assign path = "./images/" | append: reunion.data.cover %}
+        {% image path, "", "500px" %}
+      {% endif %}
+      {{ reunion.templateContent }}
+      {% if reunion.data.images %}
+        <h3>Gallery</h3>
+        <p class="italic">Click an image to expand it.</p>
+        <div class="gallery">
+          {% for image in reunion.data.images %}
+          {% assign path = "./images/" | append: image.file %}
+            <div data-modal>
+              <button class="reset" data-modal-trigger>
+                {% image path, "", "300px" %}
+              </button>
+              <figure class="gallery__modal-content">
+              {% image path, "", "700px" %}
+              {% if image.caption %}
+                <figcaption>{{image.caption}}</figcaption>
+              {% endif %}
+              </figure>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+

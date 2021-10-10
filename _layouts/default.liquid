@@ -1,3 +1,7 @@
+{% if page.url == "/" %}
+  {% assign isHome = true %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="en">
     {% render 'head', description: description, meta: meta, page: page, title: title %}
@@ -8,10 +12,16 @@
         <div class="hidden-medium">
           {% render 'navigation-quick', data: navigation_quick %}
         </div>
+
+        {% if isHome %}
+          {% render 'hero', title: title, siteTitle: meta.title, src: hero.src, darken: hero.darken, text-align: hero.text-align, position: hero.image-position %}
+        {% endif %}
         <div class="with-sidebar" data-state="desktop">
           {% render 'navigation', data: navigation, meta: meta, navigation-quick-data: navigation_quick, page: page, social-media: social_media %}
           <div>
-            {% render 'header', title: title, siteTitle: meta.title, src: hero.src, darken: hero.darken, text-align: hero.text-align, position: hero.image-position %}
+            {% unless isHome %}
+              {% render 'header', title: title, siteTitle: meta.title, src: hero.src, darken: hero.darken, text-align: hero.text-align, position: hero.image-position %}
+            {% endunless %}
             <main id="main">
                 {{ content }}
                 {% render 'ctas', ctas: ctas, pages: collections.all %}

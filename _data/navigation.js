@@ -55,8 +55,8 @@ const pages = [
     description: "",
   },
   {
-    key: "/geneology",
-    title: "Geneology Data",
+    key: "/data",
+    title: "Genealogy Data",
     section: sections.history,
     description: "",
   },
@@ -67,8 +67,14 @@ const pages = [
     description: "",
   },
   {
-    key: "/names",
+    key: "/places",
     title: "Names Upon the Land",
+    section: sections.history,
+    description: "",
+  },
+  {
+    key: "/trek",
+    title: "The Great Trek",
     section: sections.history,
     description: "",
   },
@@ -79,7 +85,7 @@ const pages = [
     description: "",
   },
   {
-    key: "/newsletter",
+    key: "/record",
     title: "Newsletter",
     section: sections.news,
     description: "",
@@ -93,6 +99,12 @@ const pages = [
   {
     key: "/stories",
     title: "Stories",
+    section: sections.history,
+    description: "",
+  },
+  {
+    key: "/sites",
+    title: "Sites",
     section: sections.history,
     description: "",
   },

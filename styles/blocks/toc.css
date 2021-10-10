@@ -1,0 +1,25 @@
+.toc {
+  --cols: 1;
+
+  @media (min-width: 768px) {
+    --cols: 2;
+  }
+
+  @media (min-width: 1200px) {
+    --cols: 3;
+  }
+
+  column-count: var(--cols);
+  column-gap: var(--space-xl);
+  list-style-position: outside;
+  margin: var(--space-l) 0 0 0 ;
+  padding: 0;
+
+  &--simple {
+    list-style-type: none;
+  }
+
+  li {
+    margin-left: 1em;
+  }
+}

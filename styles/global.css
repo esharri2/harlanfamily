@@ -40,6 +40,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-size: 1.6rem;
+  overflow-x: hidden;
 
   &.scroll-lock {
     height: 100vh;
@@ -90,6 +91,12 @@ img,
 picture {
   max-width: 100%;
   display: block;
+}
+
+blockquote {
+  border-left: solid 1px var(--color-accent-secondary);
+  padding: var(--space-m);
+  font-style: italic;
 }
 
 /* Standardize SVG size and color */

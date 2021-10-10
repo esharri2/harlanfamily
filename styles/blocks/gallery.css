@@ -1,0 +1,33 @@
+.gallery {
+  /* Hide everything except the trigger */
+  .gallery__modal-content {
+    display: none;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+
+  button {
+    cursor: zoom-in;
+    max-width: 300px;
+
+    img {
+      float: none;
+      padding: 0;
+      transition: box-shadow var(--timing-fast);
+      width: 100%;
+    }
+
+    img:hover {
+      box-shadow: var(--shadow-s);
+    }
+  }
+
+}
+
+.gallery__modal-content {
+  figcaption {
+    margin-top: var(--space-m);
+  }
+}

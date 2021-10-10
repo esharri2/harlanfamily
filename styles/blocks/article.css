@@ -1,9 +1,44 @@
 .article {
 
+  figure {
+    float: left;
+    max-width: 100%;
+    padding: 0 var(--space-m) var(--space-m) 0;
+
+    img {
+      padding: 0;
+      width: 100%;
+    }  
+  }
+
+  figcaption {
+    clear: both;
+    font-size: var(--font-size-s);
+    font-style: italic;
+    padding-top: var(--space-m);
+    width: 100%
+  }
+
   img {
     float: left;
     height: auto;
     padding: 0 var(--space-m) var(--space-m) 0;
+  }
+
+  figure.align-right {
+    float: right;
+
+    img {
+      padding: 0  0 var(--space-m) var(--space-m);
+    }
+  }
+
+  figure.align-full {
+    float: none;
+
+    img {
+      float: none;
+    }
   }
 
   &__by {

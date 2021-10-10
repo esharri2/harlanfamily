@@ -5,5 +5,5 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ "./assets/fonts/*": "./" });
   eleventyConfig.addPassthroughCopy({ "./assets/favicons/*": "./" });
   eleventyConfig.addPassthroughCopy({ "./assets/docs/*": "./docs/" });
-
+  eleventyConfig.addPassthroughCopy({ "./pages/record/": "./record/" });
 };

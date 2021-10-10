@@ -17,9 +17,14 @@
     --nav-transform: none;
     --nav-list-padding: 0;
     --quick-display: none;
+
+    align-self: flex-start;
+    position: sticky;
+    top: var(--space-l);
   }
 
-  padding: var(--p-t) var(--space-l) var(--p-b) 0;
+  /* padding: var(--p-t) var(--space-l) var(--p-b) 0; */
+
 
   &__button-bar {
     align-items: center;

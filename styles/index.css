@@ -7,6 +7,7 @@
 @import 'utilities/flow';
 @import 'utilities/grid';
 @import 'utilities/hidden';
+@import 'utilities/italic';
 @import 'utilities/page-container';
 @import 'utilities/reset';
 @import 'utilities/stack';
@@ -15,13 +16,16 @@
 
 /* Blocks */
 @import 'blocks/article';
+@import 'blocks/back';
 @import 'blocks/back-to-top';
 @import 'blocks/board-member';
 @import 'blocks/button';
 @import 'blocks/ctas';
 @import 'blocks/enlarge';
 @import 'blocks/footer';
+@import 'blocks/gallery';
 @import 'blocks/header';
+@import 'blocks/hero';
 @import 'blocks/ie-notice';
 @import 'blocks/input';
 @import 'blocks/link';
@@ -32,3 +36,4 @@
 @import 'blocks/newsfeed';
 @import 'blocks/search-form';
 @import 'blocks/skip-to-content';
+@import 'blocks/toc';

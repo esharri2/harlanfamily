@@ -1,0 +1,27 @@
+
+  <div class="stack">
+    {% markdown %}
+      {%- render 'content/places-intro.md' -%}
+    {% endmarkdown %}
+
+    {% assign places = places | sort: "state" %}
+
+    <table>
+      <tr>
+        <th>Name (feature)</th>
+        <th>County</th>
+        <th>State</th>
+        <th>Location (source/date)</th>
+        <th>History (source/date)</th>
+      </tr>
+    {% for place in places %}
+      <tr>
+        <td>{{ place.name }}</td>
+        <td>{{ place.county }}</td>
+        <td>{{ place.state }}</td>
+        <td>{{ place.location }}</td>
+        <td>{{ place.history }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+  </div>

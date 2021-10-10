@@ -1,9 +1,11 @@
-<header class="header {{text-align}}">
-  <div class="background-image {% unless darken == false %}darken{% endunless %} {{ position }}">
-    {% assign file = src | default: 'hero-mountain-range.jpg'%}
-    {% assign path = "./images/" | append: file %}
-    {% image path, "", "100vw" %}
-  </div>
+<header class="header">
+  {% if mega %}
+    <div class="background-image {% unless darken == false %}darken{% endunless %} {{ position }}">
+      {% assign file = src | default: 'hero-mountain-range.jpg'%}
+      {% assign path = "./images/" | append: file %}
+      {% image path, "", "100vw" %}
+    </div>
+  {% endif %}
   <div class="header__content">
     <h1>{{ title | default: siteTitle }}</h1>
   </div>

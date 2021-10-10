@@ -1,0 +1,41 @@
+.hero {
+  --height: 150px;
+  --mb: 25px;
+  --mt: 55px;
+
+
+  @media (min-width: 768px) {
+    --height: 400px;
+    --mb: 40px;
+    --mt: 0px;
+  }
+
+  /* width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%); */
+
+  color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--height);
+  margin-top: var(--mt);
+  margin-bottom: var(--mb);
+  position: relative;
+  text-align: center;
+
+  &__content {
+    z-index: 1;
+  }
+
+  .background-image {
+     /* filter: sepia(50%) brightness(80%); */
+     filter: brightness(80%);
+
+     img {
+      object-position: 70% 50%;
+     }
+
+
+  }
+}

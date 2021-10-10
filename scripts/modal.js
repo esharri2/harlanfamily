@@ -30,11 +30,18 @@ const initModals = () => {
     });
   };
 
+  const focusUnloadTrigger = () => {
+    elements.unloadTrigger.focus();
+  };
+
   const loadModal = (source) => {
     const contentForModal = source.innerHTML;
     elements.contentContainer.insertAdjacentHTML("beforeend", contentForModal);
     elements.modal.classList.remove("hidden");
     elements.body.classList.add("scroll-lock");
+
+    focusUnloadTrigger();
+    elements.unloadTrigger.addEventListener("blur", focusUnloadTrigger);
 
     elements.unloadTrigger.addEventListener(
       "click",
@@ -46,7 +53,7 @@ const initModals = () => {
   };
 
   const unloadModal = () => {
-    debugger;
+    elements.unloadTrigger.removeEventListener("blur", focusUnloadTrigger);
     elements.modal.classList.add("hidden");
     elements.contentContainer.innerHTML = "";
     elements.body.classList.remove("scroll-lock");

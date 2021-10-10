@@ -1,0 +1,10 @@
+<header class="hero">
+  <div class="background-image">
+      {% assign file = 'reunion_2017_1.jpg' | default: 'hero-mountain-range.jpg'%}
+      {% assign path = "./images/" | append: file %}
+      {% image path, "", "100vw" %}
+    </div>
+  <div class="hero__content">
+    <h1>{{ title | default: siteTitle }}</h1>
+  </div>
+</header>

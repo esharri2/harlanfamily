@@ -1,0 +1,52 @@
+{% assign sites = collections.site | sort: "data.title" %}
+
+<div class="stack">
+  {% markdown %}
+    {%- render 'content/sites-intro.md' -%}
+  {% endmarkdown %}
+  <h2>Contents</h2>
+  <ul class="toc stack">
+  {% for site in sites %}
+    {% assign slug = site.data.title | slugify %}
+    <li>
+      <a href="#{{slug}}">{{ site.data.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  {% for site in sites %}
+    {% assign slug = site.data.title | slugify %}
+    <article class="article stack" id={{ slug }}>
+      <h2>{{ site.data.title }}</h2>
+      <h3>{{ site.data.subtitle }}</h3>
+      {% for image in site.data.images %}
+         <p>{{site.data.end}}</p>
+        {% if image.end != true %}
+        {% assign path = "./images/" | append: image.file  %}
+        {% assign align = image.align | default: "left" %}
+        {% assign width = image.width | default: "100vw" %}
+          <figure class="align-{{align}}">
+            {% image path, "", width %}
+            {% if image.caption %}
+              <figcaption>{{ image.caption }}</figcaption>
+            {% endif %}
+          </figure>
+        {% endif %}
+      {% endfor %}
+      {{ site.templateContent }}
+      {% for image in site.data.images %}
+        {% if image.end == true %}
+        {% assign path = "./images/" | append: image.file  %}
+        {% assign align = image.align | default: "left" %}
+        {% assign width = image.width | default: "100vw" %}
+          <figure style="width: {{width}}" class="align-{{align}}">
+            {% image path, "", width %}
+            {% if image.caption %}
+              <figcaption>{{ image.caption }}</figcaption>
+            {% endif %}
+          </figure>
+        {% endif %}
+      {% endfor %}
+    </article>
+  {% endfor %}
+</div>
+

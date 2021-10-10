@@ -1,0 +1,9 @@
+{
+  "title": "Harlan Family Historical Sites",
+  "description": "TBD",
+  "hero": {
+    "darken": "true",
+    "text-align": "center"
+  },
+  "X_ctas": ["template", "about"]
+}

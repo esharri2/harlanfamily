@@ -1,0 +1,22 @@
+<div class="stack">
+  {% markdown %}
+    {%- render 'content/stories-intro.md' -%}
+  {% endmarkdown %}
+  <h2>Contents</h2>
+  <ul class="toc stack">
+  {% for story in collections.story %}
+    {% assign slug = story.data.title | slugify %}
+    <li>
+      <a href="#{{slug}}">{{ story.data.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  {% for story in collections.story %}
+    {% assign slug = story.data.title | slugify %}
+    <article class="article stack" id={{ slug }}>
+      <h2>{{ story.data.title }}</h2>
+      {{ story.templateContent }}
+    </article>
+  {% endfor %}
+</div>
+

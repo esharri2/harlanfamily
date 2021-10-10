@@ -1,0 +1,11 @@
+---
+title: Losing Some Harlan History
+---
+
+They were not intrinsically valuable, but they were each known very much by heart to the family. Old farm tools, kitchen utensils, personal objects, remnants of life before electronics like a mechanical device for making socks, a butter urn, a Civil War bayonet (found in the pasture), an iron bed, and a magnificent sleigh that took Jean and Douglass Harlan to school in the winter.
+
+"Now, I want you all to come down to the stable and see what a great collection we have," Dougie (Douglass Harlan) would say after dinner. We would all go down the hill to the little stable our grandfather (Dougie's father) had built when he had to retire from farming but wanted to do a modest amount of it on the side. It is a gem of a building, oak (of course) but with a slate roof! It had a couple of stalls for the horses in the bottom and a loft upstairs for hay. Though on the low side of a hill behind Overlook, the retirement home, it still had an unexpectedly wonderful view of the mountains. (What an artist's studio it would have made.) Up in the loft were all these things spread out. We were so glad they existed, but never gave them much thought except to feel assured they were in the old stable. Visiting them was an occasional excercise, but in the past decade, especially, the groundhogs had so undermined the foundation that the building should now be called the "unstable." I was afraid to go in at all because of how the structure was twisted. Nonetheless, it stands to this very day, slate roof and all.
+
+Recently, however, the people who now rent Overlook said they had been to the stable and that all the Harlan artifacts had been cleaned out! Stolen! Forever gone! And not much worth to the thief, at that. But such a loss to all of us. It is with pain that we confess it to you. The moral of this story is that in the modern world, more and more, tangible things are fragile. They are subject to theft or destruction or loss in any number of ways. It is true of the old rakes in the loft. It is true of Harlan Farm itself.
+
+--Submitted by Nancy McMurray
