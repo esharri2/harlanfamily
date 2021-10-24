@@ -10,7 +10,7 @@ pagination:
   {% for post in posts %}
     <article class="article stack">
       <h2>{{post.data.title}}</h2>
-      <p><span class="italic">{% prettyDate post.data.date %}</span> | <span class="italic">{{post.data.description}}</span></p>
+      <p><span class="italic">{% prettyDate post.data.date %}</span> {%comment%}| <span class="italic">{{post.data.description}}</span>{% endcomment %}</p>
       {{post.templateContent}}
     </article>
   {% endfor %}

@@ -1,0 +1,21 @@
+.banner {
+  align-items: center;
+  background-color: var(--color-accent-secondary);
+  box-shadow: var(--shadow-s);
+  color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  text-decoration: none;
+
+  width: 100vw;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+
+  div {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+
+

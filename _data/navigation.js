@@ -85,6 +85,12 @@ const pages = [
     description: "",
   },
   {
+    key: "/irish-interlude",
+    title: "Irish Interlude",
+    section: sections.history,
+    description: "",
+  },
+  {
     key: "/news",
     title: "News & Updates",
     section: sections.news,

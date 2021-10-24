@@ -1,18 +1,12 @@
 .skip-to-content {
-  left: 50%;
-  position: absolute;
-  transform: translateY(-100%);
-}
-
-.skip-to-content {
-  background: var(--color-accent);
-  color: var(--color-text);
-  height: 30px;
+  background: var(--color-accent-secondary);
+  border-radius: 5px;
+  color: var(--color-background);
   left: 50%;
   padding: 8px;
   position: absolute;
   text-decoration: none;
-  transform: translateY(-100%);
+  transform: translateY(-300%);
   transition: transform 0.3s;
 }
 
