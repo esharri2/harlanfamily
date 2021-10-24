@@ -19,7 +19,7 @@
     --quick-display: none;
 
     align-self: flex-start;
-    position: sticky;
+    /* position: sticky; */
     top: var(--space-l);
   }
 

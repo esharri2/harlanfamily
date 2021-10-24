@@ -1,8 +1,4 @@
 {
   "title": "Search",
-  "description": "TODO - search",
-  "hero": {
-    "darken": "true",
-    "text-align": "center"
-  }
+  "description": "Search the Harlan Family in America website"
 }

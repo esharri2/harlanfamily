@@ -3,22 +3,28 @@ const backToTop = () => {
   const backToTopFlag = document.querySelector("#backToTopFlag");
   const toggleClasses = ["hidden"];
 
+  const showButton = () => {
+    // Unhide
+    backToTopEl.classList.remove(...toggleClasses);
+
+    // Add click listener
+    backToTopEl.addEventListener("click", handleClick, { once: true });
+  };
+
   const handleClick = () => {
     setTimeout(() => {
       backToTopEl.classList.add(...toggleClasses);
     }, 500);
   };
 
-  let observer = new IntersectionObserver((entries) => {
-  
-    const { boundingClientRect, isIntersecting } = entries[0];
-    console.log("yo", isIntersecting);
-    if (isIntersecting) {
-      // Unhide
-      backToTopEl.classList.remove(...toggleClasses);
+  if (window.scrollY > 2000) {
+    showButton();
+  }
 
-      // Add click listener
-      backToTopEl.addEventListener("click", handleClick, { once: true });
+  let observer = new IntersectionObserver((entries) => {
+    const { boundingClientRect, isIntersecting } = entries[0];
+    if (isIntersecting) {
+      showButton();
     } else if (!isIntersecting && boundingClientRect.top > 0) {
       backToTopEl.removeEventListener("click", handleClick, { once: true });
       backToTopEl.classList.add(...toggleClasses);

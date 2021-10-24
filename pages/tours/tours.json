@@ -1,11 +1,5 @@
 {
   "title": "Harlan Family Tours",
-  "description": "TODO",
-  "hero": {
-    "darken": "true",
-    "text-align": "center",
-    "src": "hero-headwaters-forest.jpg",
-    "image-position": "top"
-  },
-  "ctas": ["template", "about"]
+  "description": "Learn about Harlan family tours",
+  "ctas": ["news", "reunions"]
 }

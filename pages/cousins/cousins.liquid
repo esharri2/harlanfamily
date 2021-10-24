@@ -24,7 +24,8 @@
     <button class="button" type="reset">Reset</button>
   </form>
   <div class="table-wrapper">
-  <table>
+  <p class="hidden" id="noResults">There are no names that match your search.</p>
+  <table data-table>
     <tr>
       <th style="width: 25%">{{ col1 }}</th>
       <th>{{ col2 }}</th>
@@ -43,24 +44,39 @@
 {% capture js %}
   (function(){
 
+  const table = document.querySelector('[data-table]');
   const rows = document.querySelectorAll('[data-name]');
   const form = document.querySelector("form.search-form");
+  const noResultsEl = document.querySelector("#noResults");
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = (event.target.elements.query.value || "").toLowerCase();
+    let noResults = true;
     
     rows.forEach(row => {
       if (row.dataset.name.includes(query)) {
-        row.classList.remove('hidden')
+        row.classList.remove('hidden');
+        noResults = false;
       } else {
         row.classList.add('hidden')
       }
     })
+
+    if (noResults) {
+      noResultsEl.classList.remove('hidden');
+      table.classList.add('hidden');
+      } else {
+      noResultsEl.classList.add('hidden');
+      table.classList.remove('hidden');
+
+    }
   })
 
   form.addEventListener("reset", (event) => {
-    rows.forEach(row=>row.classList.remove('hidden'))
+    table.classList.remove('hidden');
+    noResultsEl.classList.add('hidden');
+    rows.forEach(row=>row.classList.remove('hidden'));
   })
 
 })()

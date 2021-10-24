@@ -1,8 +1,5 @@
 {
   "title": "Harlan Family Reunions",
-  "description": "TODO - reunions",
-  "hero": {
-    "darken": "true",
-    "text-align": "center"
-  }
+  "description": "Learn about upcoming and past Harlan family reunions",
+  "ctas": ["news", "about"]
 }

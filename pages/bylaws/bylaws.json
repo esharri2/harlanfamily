@@ -1,10 +1,5 @@
 {
   "title": "Bylaws",
   "description": "View the bylaws of the The Harlan Family in America Association",
-  "hero": {
-    "darken": "true",
-    "text-align": "center",
-    "src": "hero-wheat-co.jpg"
-  },
   "ctas": ["board", "about"]
 }

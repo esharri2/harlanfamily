@@ -1,8 +1,5 @@
 {
   "title": "Ninety Plus Club",
-  "description": "TODO",
-  "hero": {
-    "darken": "true",
-    "text-align": "center"
-  }
+  "description": "Get to know the amazing Harlans who are 90 and older",
+  "ctas": ["stories", "who"]
 }

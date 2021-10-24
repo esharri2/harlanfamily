@@ -17,6 +17,7 @@
 }
 
 .cta {
+  background-color: var(--color-accent-secondary);
   box-shadow: var(--shadow-s);
   color: var(--color-background);
   overflow: hidden;
@@ -46,7 +47,6 @@
 
   &__description {
     padding-right: calc(var(--padding) * 2);
-    /* font-size: var(--font-size-s); */
   }
 
   &__icon {

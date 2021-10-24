@@ -1,8 +1,5 @@
 {
   "title": "Contact",
-  "description": "tbd contact",
-  "hero": {
-    "darken": "true",
-    "text-align": "center"
-  }
+  "description": "Get in touch with the Harlan Family in America",
+  "ctas": ["board", "donate"]
 }

@@ -1,8 +1,5 @@
 {
   "title": "Origin of the Name Harlan",
-  "description": "TODO",
-  "hero": {
-    "darken": "true",
-    "text-align": "center"
-  }
+  "description": "Learn about the origins of the Harlan name",
+  "ctas": ["cousins", "history"]
 }

@@ -1,9 +1,15 @@
+{% assign imagesString = "reunion_2017_1.jpg,Harlan_Cabin_Summer.jpg,reunion_2017_2.jpg" %}
+
+{% assign imagesString = "reunion_2017_2.jpg,Harlan_Cabin_Summer.jpg,JacobWrightHarlan1.jpg,Gideon_Gilpin_House.jpg" %}
+{% assign images = imagesString | split: "," %}
+
 <header class="hero">
-  <div class="background-image">
-      {% assign file = 'reunion_2017_1.jpg' | default: 'hero-mountain-range.jpg'%}
-      {% assign path = "./images/" | append: file %}
-      {% image path, "", "100vw" %}
-    </div>
+  {% for image in images %}
+  <div class="hero__image">
+    {% assign path = "./images/" | append: image %}
+    {% image path, "", "50vw" %}
+  </div>
+  {% endfor %}
   <div class="hero__content">
     <h1>{{ title | default: siteTitle }}</h1>
   </div>

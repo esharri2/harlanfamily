@@ -1,10 +1,5 @@
 {
   "title": "Officers and Board Members",
   "description": "Meet the board of The Harlan Family in America Association",
-  "hero": {
-    "darken": "true",
-    "text-align": "center",
-    "src": "hero-vermont.jpg"
-  },
   "ctas": ["bylaws", "about"]
 }

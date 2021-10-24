@@ -1,10 +1,5 @@
 {
   "title": "Harlan Cousins",
-  "description": "TBD",
-  "hero": {
-    "darken": "true",
-    "text-align": "center",
-    "X_src": "hero-headwaters-forest.jpg"
-  },
-  "X_ctas": ["template", "about"]
+  "description": "Find the names and ancestors of Harlans, Harlands, and Harlins",
+  "ctas": ["data", "who"]
 }

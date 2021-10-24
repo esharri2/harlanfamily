@@ -1,9 +1,5 @@
 {
   "title": "The Harlan Family in America",
-  "description": "TODO, about bylaws",
   "permalink": "/",
-  "hero": {
-    "darken": "true",
-    "text-align": "center"
-  }
+  "ctas": ["about", "history", "cousins", "board", "record", "contact"]
 }

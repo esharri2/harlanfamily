@@ -49,6 +49,12 @@ const pages = [
     description: "",
   },
   {
+    key: "/history",
+    title: "A Brief History",
+    section: sections.history,
+    description: "",
+  },
+  {
     key: "/documents",
     title: "Documents",
     section: sections.history,
