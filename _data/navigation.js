@@ -55,6 +55,12 @@ const pages = [
     description: "",
   },
   {
+    key: "/genealogy",
+    title: "Genealogy by Alpheus Harlan",
+    section: sections.history,
+    description: "",
+  },
+  {
     key: "/documents",
     title: "Documents",
     section: sections.history,

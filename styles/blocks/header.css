@@ -1,11 +1,10 @@
 .header {
   border-bottom: solid .5px var(--color-accent-secondary);
-  margin-top: var(--space-xxxl);
+  margin-top: var(--space-xxl);
   margin-bottom: var(--space-xl);
-  /* padding: var(--space-l); */
 
-   @media (min-width: 768px) {
-     margin-top: 0;
-   }
+ @media (min-width: 768px) {
+    margin-top: 0;
+ }
 }
 

@@ -50,6 +50,19 @@ const initNav = () => {
     elements.body.classList.remove("scroll-lock");
   };
 
+  const toggleStickyNav = () => {
+    const body = document.querySelector("body");
+    const resizeObserver = new ResizeObserver((entries) => {
+      if (window.innerHeight > elements.nav.offsetHeight) {
+        elements.nav.classList.add("sticky");
+      } else {
+        elements.nav.classList.remove("sticky");
+      }
+    });
+    resizeObserver.observe(body);
+  };
+
+  toggleStickyNav();
   bindEvents();
 };
 
