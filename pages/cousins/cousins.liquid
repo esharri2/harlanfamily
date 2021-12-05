@@ -11,7 +11,8 @@
 
 <div class="stack">
   <p>All Harlans/Harlands/Harlins or relations can have their names and ancestors listed in these pages if they so desire. We ask that you provide your line of ancestors covered in the "History and Genealogy of the Harlan Family" by Alpheus H. Harlan, if possible. If your line is not covered in the book, list the name of your oldest known ancestors along with the location and date of their births. Please include the name of your state of residence which is most useful where duplications in names occur.</p>
-  <p>If you wish to contact a person listed, send your request to Gerry Harlan Lundgren. She maintains an updated list of email addresses and will forward your request on to the proper person. That person will contact you directly if they so desire.</p>
+  <p>If you wish to contact a person listed, send your request to [Gerry Harlan Lundgren](mailto:gerrylun@myfmtc.com). She maintains an updated list of email addresses and will forward your request on to the proper person. That person will contact you directly if they so desire.</p>
+  <p>We also have a <a href="#sites">list of websites hosted by Harlan family members</a>.</p>
   <form class="search-form">
     <label for="cousin-search">Search all or part of a name
     </label>
@@ -40,6 +41,14 @@
     {% endfor %}
   </table>
   </div>
+</div>
+<div id="sites">
+  <h2>Websites hosted by Harlan family members</h2>
+  <ul>
+  {% for site in cousins-sites %}
+    <li><a href="{{site.url}}">{{site.title}}</a></li>
+  {% endfor %}
+  </ul>
 </div>
 {% capture js %}
   (function(){

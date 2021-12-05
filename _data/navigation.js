@@ -104,7 +104,7 @@ const pages = [
   },
   {
     key: "/record",
-    title: "Newsletter",
+    title: "Newsletter, <i>The Harlan Record</i>",
     section: sections.news,
     description: "",
   },

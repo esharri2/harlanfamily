@@ -10,7 +10,11 @@
             <a class="link" href="{{ post.url }}">
               <p class="newsfeed__item-title">{{post.data.title}}</p>
               <p class="newsfeed__item-date">{% prettyDate post.data.date %}</p>
+              {% if post.data.image %}
+                {% image post.data.image, post.data.imageAlt, "100vw" %}
+              {% endif %}
             </a>
+
           </li>
 
         {% endfor %}
