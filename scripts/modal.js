@@ -43,13 +43,21 @@ const initModals = () => {
     focusUnloadTrigger();
     elements.unloadTrigger.addEventListener("blur", focusUnloadTrigger);
 
-    elements.unloadTrigger.addEventListener(
+    elements.modal.addEventListener(
       "click",
       () => {
         unloadModal();
       },
       { once: true }
     );
+
+    // elements.unloadTrigger.addEventListener(
+    //   "click",
+    //   () => {
+    //     unloadModal();
+    //   },
+    //   { once: true }
+    // );
   };
 
   const unloadModal = () => {
@@ -60,6 +68,6 @@ const initModals = () => {
   };
 
   bindEvents();
-};
+};;
 
 export default initModals;

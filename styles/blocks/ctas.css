@@ -35,10 +35,6 @@
     transition: transform var(--timing-fast);
   }
 
-  &__text {
-    z-index: 1;
-  }
-
   &__title {
     font-family: var(--font-title);
     font-size: var(--font-size-m);
