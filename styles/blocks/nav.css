@@ -1,5 +1,4 @@
 .nav {
-  --button-bar-height: 50px;
   --link-list-p: var(--space-l);
   --p-t: calc(var(--button-bar-height));
   --p-b: var(--space-l);
@@ -19,12 +18,8 @@
     --quick-display: none;
 
     align-self: flex-start;
-    /* position: sticky; */
     top: var(--space-l);
   }
-
-  /* padding: var(--p-t) var(--space-l) var(--p-b) 0; */
-
 
   &__button-bar {
     align-items: center;

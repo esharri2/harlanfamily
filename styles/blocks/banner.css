@@ -4,19 +4,27 @@
   box-shadow: var(--shadow-s);
   color: var(--color-background);
   display: flex;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   justify-content: center;
-  min-height: 50px;
-  text-decoration: none;
-
-  width: 100vw;
   margin-left: 50%;
+  margin-top: var(--button-bar-height);
+  min-height: 50px;
+  text-align: center;
+  text-decoration: none;
   transform: translate(-50%, 0);
+  width: 100vw;
 
   div {
     margin: 0 auto;
     max-width: 800px;
+    padding: 0 var(--space-m);
   }
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-m);
+    margin-top: 0;
+  }
+
 }
 
 

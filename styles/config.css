@@ -56,4 +56,7 @@
   --timing-medium: .5s;
 
   --timing-function: ease-out;
+
+  /* Magic numbers */
+  --button-bar-height: 50px;
 }
