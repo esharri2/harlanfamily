@@ -16,7 +16,7 @@
     font-size: var(--font-size-s);
     font-style: italic;
     padding-top: var(--space-m);
-    width: 100%
+    width: 100%;
   }
 
   img {
@@ -25,19 +25,15 @@
     padding: 0 var(--space-m) var(--space-m) 0;
   }
 
+  figure.align-full {
+    float: none;
+  }
+
   figure.align-right {
     float: right;
 
     img {
       padding: 0  0 var(--space-m) var(--space-m);
-    }
-  }
-
-  figure.align-full {
-    float: none;
-
-    img {
-      float: none;
     }
   }
 
