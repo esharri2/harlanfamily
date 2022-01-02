@@ -29,6 +29,10 @@
     float: none;
   }
 
+  figure.align-full img {
+    float: none;
+  }
+
   figure.align-right {
     float: right;
 
