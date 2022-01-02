@@ -1,5 +1,21 @@
 <script async src="/messages.js"></script>
 
-  {% markdown %}
-    {%- render "content/messages-intro.md" -%}
-  {% endmarkdown %}
+{% markdown %}
+  {%- render "content/messages-intro.md" -%}
+{% endmarkdown %}
+
+<div class="messages">
+  <section class="messages__post-form">
+    <form id="post-form" class="hidden">
+      <input type="text" name="name" required />
+      <input type="text" name="email"/>
+      <textarea required></textarea>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+      </div>
+    </form>
+    <button aria-expanded="false" aria-controls="post-form" class="button">Post a message</button>
+  </section>
+</div>
+

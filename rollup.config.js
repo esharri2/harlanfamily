@@ -20,7 +20,7 @@ export default [
     ],
   },
   {
-    input: "scripts/messages.js",
+    input: "scripts/messages",
     output: {
       file: !dev ? "_site/messages.js" : "_temp/messages.js",
       format: "es",

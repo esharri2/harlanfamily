@@ -1,20 +1,6 @@
 
 Welcome to the Harlan Tours Page.  Over the years, the Harlans have taken three tours that included England, Northern Ireland, Scotland and Wales in search of the sites of our roots.  We visited such highlights as St. Peter's Church in Monkwearmouth (site of the baptism of George), Sutton Hall outside of York with its nearby church, the Lurgan Meeting in Northern Ireland and the Harland Moors in Yorkshire. 
 
-<figure>
-  {% assign file = 'TripWales.jpg'%}
-  {% assign path = "./images/" | append: file %}
-  {% image path, "A group of people posing for camera" %}
-  <figcaption>1998 Trip to Wales</figcaption>
-</figure>
-
-<figure>
-  {% assign file = 'stpeters.jpg'%}
-  {% assign path = "./images/" | append: file %}
-  {% image path, "Three men walking into a church" %}
-  <figcaption>Members of the tour group entering St.Peter's Monkwearmouth Church</figcaption>
-</figure>
-
 Contact Ashton-Drye Associates, Inc. for more information:  
 
 95 Squire Place  
@@ -68,3 +54,19 @@ our Dublin Hotel for a short refreshment before being transferred to our Irish N
 
 Tuesday, October 25  
 After an early breakfast and packing all of our souvenirs and memories, we are on to the Dublin Airport for our flights home. (B)
+
+### 1998 Tour
+
+<figure>
+  {% assign file = 'TripWales.jpg'%}
+  {% assign path = "./images/" | append: file %}
+  {% image path, "A group of people posing for camera" %}
+  <figcaption>1998 Trip to Wales</figcaption>
+</figure>
+
+<figure>
+  {% assign file = 'stpeters.jpg'%}
+  {% assign path = "./images/" | append: file %}
+  {% image path, "Three men walking into a church" %}
+  <figcaption>Members of the tour group entering St.Peter's Monkwearmouth Church</figcaption>
+</figure>

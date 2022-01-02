@@ -48,8 +48,10 @@
     "maintained node versions"
   ],
   "dependencies": {
+    "dotenv": "^10.0.0",
     "eleventy-plugin-metagen": "^1.4.0",
     "firebase": "^9.4.1",
-    "postcss-nested": "^5.0.5"
+    "postcss-nested": "^5.0.5",
+    "rollup-plugin-svelte": "^7.1.0"
   }
 }

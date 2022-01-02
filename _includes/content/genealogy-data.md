@@ -6,8 +6,6 @@ Several printed sources of Harlan genealogy are in existence today. They are: Hi
 
 An Updated Genealogy: The Descendants of #194, Aaron and Elizabeth (Stuart) Harlan, compiled by Joydelle Garrett Wolfram (No. 4275) copyright 1990 by Joydelle Garrett Wolfram for Harlan Reunion of Blue Ridge, Falls County, Texas. Published by Design, Type and Graphics, Dallas, Texas. Library of Congress Catalog Number 92-070898. This print, (commonly known as the "Texas Red Books"), consists of the descendants of #194, Aaron and Elizabeth (Stuart) Harlan; appendix I, Samuel Harlan, #195; and appendix II, Valentine Harlan, #200. 
 
-For further information about these books, and how they may be purchased, see store area here in The Harlan Family Web Site. Additional information may also be found in the Genealogy and History Pages in the site.
-
 ## Capturing New Data
 
 Since the 310 Harlan Family Reunion held in Mt. Pleasant Ia., and the creation of the Harlan Web Site, there seems to be a growing interest in capturing newly updated Harlan genealogy data.

@@ -31,6 +31,7 @@
 @import 'blocks/input';
 @import 'blocks/link';
 @import 'blocks/markdown';
+@import 'blocks/messages';
 @import 'blocks/modal';
 @import 'blocks/nav';
 @import 'blocks/nav-quick';

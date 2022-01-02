@@ -8,14 +8,14 @@
   {%- render 'content/documents-intro.md'-%}
   {% endmarkdown %}
   <h2>List of documents</h2>
-  <div class="toc stack">
+  <ul class="toc stack">
     {% for document in documents %}
       {% assign slug = document.title | slugify %}
       <li>
         <a href="#{{slug}}">{{document.title}}</a>
       </li>
     {% endfor %}
-  </div>
+  </ul>
   {% for document in documents %}
     {% assign slug = document.title | slugify %}
     <article id={{slug}} class="stack">
@@ -24,7 +24,7 @@
       {% if document.image %}
         {% assign path = "./images/" | append: document.image %}
         <figure class="stack" data-modal>
-          {% image path, "", "600px" %}
+          {% image path, "", "1200px", '1200,1600,2000' %}
             <caption>{{document.image_caption}}</caption>
           <button class="button" data-modal-trigger>Enlarge image</button>
         </figure>
@@ -32,7 +32,7 @@
       {% if document.image2 %}
         {% assign path = "./images/" | append: document.image2 %}
         <figure class="stack" data-modal>
-          {% image path, "", "600px" %}
+          {% image path, "", "1200px", '1200' %}
           {% if document.image2_caption%}
             <caption>{{document.image2_caption}}</caption>
           {% endif %}

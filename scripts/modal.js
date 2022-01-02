@@ -50,14 +50,6 @@ const initModals = () => {
       },
       { once: true }
     );
-
-    // elements.unloadTrigger.addEventListener(
-    //   "click",
-    //   () => {
-    //     unloadModal();
-    //   },
-    //   { once: true }
-    // );
   };
 
   const unloadModal = () => {
