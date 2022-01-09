@@ -4,7 +4,7 @@ const Image = require("@11ty/eleventy-img");
 
 const image = (eleventyConfig) => {
   const formats =
-    process.env.ELEVENTY_ENV === "production" ? ["webp", "jpeg"] : ["jpeg"];
+    process.env.ELEVENTY_ENV === "production" ? ["jpeg"] : ["jpeg"];
 
   eleventyConfig.addShortcode(
     "image",

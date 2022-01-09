@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
   addPlugins(eleventyConfig);
   addPassThroughCopies(eleventyConfig);
   addShortCodes(eleventyConfig);
-  addTransforms(eleventyConfig);
+  // addTransforms(eleventyConfig);
   addFilters(eleventyConfig);
   eleventyConfig.addWatchTarget("./_temp/");
   eleventyConfig.setDataDeepMerge(true);
