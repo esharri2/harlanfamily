@@ -1,5 +1,6 @@
 {
   "title": "Harlan Family In America: <br> A Brief History",
   "description": "Read a brief history of the Harlan Family in America by Louis R. Harlan",
-  "ctas": ["data", "stories"]
+  "ctas": ["data", "stories"],
+  "permalink": "history.html"
 }

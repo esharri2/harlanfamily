@@ -1,5 +1,5 @@
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addPassthroughCopy({ "./Images/*": "./images/" });
+  eleventyConfig.addPassthroughCopy("./images/");
   eleventyConfig.addPassthroughCopy({ "./_temp/index.css": "./index.css" });
   eleventyConfig.addPassthroughCopy({ "./_temp/main.js": "./main.js" });
   eleventyConfig.addPassthroughCopy({ "./_temp/messages.js": "./messages.js" });

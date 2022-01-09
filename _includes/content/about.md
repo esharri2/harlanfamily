@@ -1,6 +1,6 @@
 The Harlan Family in America Association was formed in 1987 in conjunction with a national family reunion held in Delaware, to celebrate the 300th anniversary of the immigration of George and Michael Harlan. The purpose of the organization is to document and perpetuate the history and genealogy of the family.
 
-The primary activity of the family is the semi-annual publication of a newsletter called the [Harlan Record](/newsletter). The newsletter serves as the means for communicating information about Harlan history, Harlan family members, and Harlan family activities. The Record also publishes inquiries for those doing research on their Harlan heritage.
+The primary activity of the family is the semi-annual publication of a newsletter called the [Harlan Record](/record.html). The newsletter serves as the means for communicating information about Harlan history, Harlan family members, and Harlan family activities. The Record also publishes inquiries for those doing research on their Harlan heritage.
 
 Membership in the family organization is free but we encourage those who can afford to do so to send a yearly contribution.  Please send your contributions to:
 

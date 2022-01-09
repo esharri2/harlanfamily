@@ -1,5 +1,5 @@
 [
-  { "key": "/search", "title": "Search", "icon": "search.svg" },
-  { "key": "/contact", "title": "Contact", "icon": "mail.svg" },
-  { "key": "/donate", "title": "Donate", "icon": "heart.svg" }
+  { "key": "/search.html", "title": "Search", "icon": "search.svg" },
+  { "key": "/contact.html", "title": "Contact", "icon": "mail.svg" },
+  { "key": "/donate.html", "title": "Donate", "icon": "heart.svg" }
 ]

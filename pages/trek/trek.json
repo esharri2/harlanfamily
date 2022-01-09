@@ -1,5 +1,6 @@
 {
   "title": "The Great Trek",
   "description": "Learn about Harlans making the westward trek",
-  "ctas": ["stories", "history"]
+  "ctas": ["stories", "history"],
+  "permalink": "trek.html"
 }

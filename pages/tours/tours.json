@@ -1,5 +1,6 @@
 {
   "title": "Harlan Family Tours",
   "description": "Learn about Harlan family tours",
-  "ctas": ["news", "reunions"]
+  "ctas": ["news", "reunions"],
+  "permalink": "tours.html"
 }

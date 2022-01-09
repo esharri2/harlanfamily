@@ -6,4 +6,4 @@ Suggested criteria for articles for "The Who's Who of Harlans" should feature no
 
 If you have an unusual story about a Harlan descendant or a Harlan contemporary, please send it to [Dorothy Sperry](mailto:dorothysperry49@gmail.com).
 
-Also visit the page, [Stories of Harlans](/stories).
+Also visit the page, [Stories of Harlans](/stories.html).

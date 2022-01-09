@@ -1,5 +1,6 @@
 {
   "title": "Bylaws",
   "description": "View the bylaws of the The Harlan Family in America Association",
-  "ctas": ["board", "about"]
+  "ctas": ["board", "about"],
+  "permalink": "bylaws.html"
 }

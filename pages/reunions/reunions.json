@@ -1,5 +1,6 @@
 {
   "title": "Harlan Family Reunions",
   "description": "Learn about upcoming and past Harlan family reunions",
-  "ctas": ["news", "about"]
+  "ctas": ["news", "about"],
+  "permalink": "reunions.html"
 }

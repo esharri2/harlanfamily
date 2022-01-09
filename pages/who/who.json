@@ -1,5 +1,6 @@
 {
   "title": "Who's Who of Harlans",
   "description": "Learn about notable Harlans",
-  "ctas": ["stories", "cousins"]
+  "ctas": ["stories", "cousins"],
+  "permalink": "who.html"
 }

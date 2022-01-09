@@ -1,5 +1,6 @@
 {
   "title": "Harlan Family Historical Sites",
   "description": "Learn about Harlan historical sites all across the United States",
-  "ctas": ["places", "cousins"]
+  "ctas": ["places", "cousins"],
+  "permalink": "sites.html"
 }

@@ -1,5 +1,6 @@
 {
   "title": "Harlan Cousins",
   "description": "Find the names and ancestors of Harlans, Harlands, and Harlins",
-  "ctas": ["data", "who"]
+  "ctas": ["data", "who"],
+  "permalink": "cousins.html"
 }

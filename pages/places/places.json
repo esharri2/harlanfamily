@@ -1,5 +1,6 @@
 {
   "title": "Names Upon the Land",
   "description": "View our database of places that carry the Harlan name",
-  "ctas": ["sites", "cousins"]
+  "ctas": ["sites", "cousins"],
+  "permalink": "places.html"
 }

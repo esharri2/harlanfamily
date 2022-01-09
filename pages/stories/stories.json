@@ -1,5 +1,6 @@
 {
   "title": "Stories of Harlans",
   "description": "Read fascinating stories of Harlans throughout history",
-  "ctas": ["history", "who"]
+  "ctas": ["history", "who"],
+  "permalink": "stories.html"
 }
