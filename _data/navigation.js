@@ -25,6 +25,12 @@ const pages = [
     description: "",
   },
   {
+    key: "/donate",
+    title: "Donate",
+    section: sections.association,
+    description: "",
+  },
+  {
     key: "/cousins",
     title: "Cousins",
     section: sections.people,

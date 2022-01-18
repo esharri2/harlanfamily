@@ -20,7 +20,7 @@
         {% for section in data %}
             <p class="nav__section-title">{{section.name}}</p>
             {% for item in section.pages %}
-              {% assign navDataKey = item.key | append: "/"%}
+              {% assign navDataKey = item.key | append: ".html"%}
               {% if page.url == navDataKey %}
                   {% assign activeClasses = 'active'%}
                   {% assign currentAttribute = 'aria-current="page"' %}

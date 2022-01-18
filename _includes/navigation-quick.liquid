@@ -3,7 +3,12 @@
     {% for item in data %}
       <li class="nav-quick__item">
         {% assign iconPath = '/_includes/icons/' | append: item.icon %}
-        <a class="link" href={{item.key}}>{{item.title}}{% unless item.icon == empty %}{{ iconPath | svgContents }}{% endunless %}</a>
+        {% if item.key == '/donate.html'%}
+          {% assign classes = "button" %}
+        {% else %}
+          {% assign classes = "link" %}
+        {% endif %}
+        <a class="{{classes}}" href={{item.key}}>{{item.title}}{% unless item.icon == empty %}{{ iconPath | svgContents }}{% endunless %}</a>
       </li>
     {% endfor %}
   </ul>
