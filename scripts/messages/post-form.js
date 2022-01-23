@@ -1,8 +1,10 @@
+import { postMessage } from "../utils/fetchers";
+
 const classes = {
   cancel: "button[type='reset']",
   component: ".messages__post-form",
   form: "#post-form",
-  disclosureOpen: "[aria-controls='post-form']",
+  disclosureOpen: '[aria-controls="post-form"]',
 };
 
 const component = document.querySelector(classes.component);
@@ -25,12 +27,23 @@ export default function initPostMessage() {
     disclosureOpen.addEventListener("click", () => {
       toggleForm(true);
     });
+    form.addEventListener("submit", handleMessageSubmit);
   };
 
   const toggleForm = (open) => {
-    const classListAction = open ? "remove" : "add";
     disclosureOpen.setAttribute("aria-expanded", !!open);
-    form.classList[classListAction]("hidden");
+    disclosureOpen.classList.toggle("hidden");
+    form.classList.toggle("hidden");
+  };
+
+  const handleMessageSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    postMessage(
+      formData.get("name"),
+      formData.get("email"),
+      formData.get("message")
+    );
   };
 
   // Calls

@@ -49,12 +49,6 @@ const pages = [
     description: "",
   },
   {
-    key: "/messages",
-    title: "Messages",
-    section: sections.people,
-    description: "",
-  },
-  {
     key: "/history",
     title: "A Brief History",
     section: sections.history,

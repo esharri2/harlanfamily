@@ -1,8 +1,4 @@
-<script async src="/messages.js"></script>
-
-COMING SOON
-
-{% comment %}
+<script defer src="/messages.js"></script>
 
 {% markdown %}
   {%- render "content/messages-intro.md" -%}
@@ -11,9 +7,10 @@ COMING SOON
 <div class="messages">
   <section class="messages__post-form">
     <form id="post-form" class="hidden">
-      <input type="text" name="name" required />
-      <input type="text" name="email"/>
-      <textarea required></textarea>
+      <label>Name: <input required type="text" name="name" required /></label>
+      <label>Email: <input required type="email" name="email"/></label>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
       <div>
         <button type="submit">Submit</button>
         <button type="reset">Cancel</button>
@@ -22,5 +19,3 @@ COMING SOON
     <button aria-expanded="false" aria-controls="post-form" class="button">Post a message</button>
   </section>
 </div>
-
-{% endcomment %}

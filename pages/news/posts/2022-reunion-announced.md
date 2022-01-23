@@ -1,8 +1,6 @@
 ---
 title: The Reunion is ON for 2022!!
 date: 2021-11-01
-image: "images/Harlan2022Colorlogo.jpg"
-imageAlt: "Harlan 2022 reunion logo"
 permalink: "{{page.filePathStem}}.html"
 
 ---

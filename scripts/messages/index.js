@@ -9,6 +9,7 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: "AIzaSyDrMfODbWgtqidzUNEMYTwn74BNNYEI5rI",
   authDomain: "harlan-dev.firebaseapp.com",
+  databaseURL: "https://harlan-dev-default-rtdb.firebaseio.com",
   projectId: "harlan-dev",
   storageBucket: "harlan-dev.appspot.com",
   messagingSenderId: "810519112340",
@@ -17,5 +18,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+console.log(app);
 
 initPostMessage();
