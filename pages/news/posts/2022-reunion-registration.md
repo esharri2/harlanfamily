@@ -1,13 +1,13 @@
 ---
 title: 2022 Reunion Registration
-date: 2022-02-01
+date: 2022-01-27
 image: "images/Harlan2022Colorlogo.jpg"
 imageAlt: "Harlan 2022 reunion logo"
 permalink: "{{page.filePathStem}}.html"
 
 ---
 
-It's time to register for the The Harlan Family In America National Reunion, Celebration, 335, June 16-19, 2022 in Lexington, Kentucky. You can register online or by mail. You can also use the link below to reserve rooms at the Downtown Lexington Hilton. 
+It's time to register for the [The Harlan Family In America National Reunion](/reunions.html#the-reunion-is-on-for-2022), Celebration, 335, June 16-19, 2022 in Lexington, Kentucky. You can register online or by mail. You can also use the link below to reserve rooms at the Downtown Lexington Hilton. 
 
 Please complete the registration by **May 1** to help with our planning. The room reservation cut-off is **May 15**. 
 
