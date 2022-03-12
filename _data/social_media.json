@@ -8,5 +8,10 @@
     "name": "Twitter",
     "url": "https://twitter.com/theharlanfamily",
     "icon": "twitter.svg"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/harlanfamily",
+    "icon": "instagram.svg"
   }
 ]

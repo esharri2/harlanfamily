@@ -1,4 +1,5 @@
-{% assign reunions = collections.reunion | sort: fileSlug | reverse %}
+{% assign reunions = collections.reunion | sort: "fileSlug" | reverse %}
+
 
 <div class="stack">
   <h2>Contents</h2>
@@ -38,6 +39,9 @@
             </div>
           {% endfor %}
         </div>
+      {% endif %}
+      {% if reunion.data.newsletterLink and reunion.data.newsletter %}
+        <p>More detailed information on the Celebration {{ reunion.data.no }} reunion is available in the <a href="{{ reunion.data.newsletterLink }}">{{ reunion.data.newsletter }}.</a></p>
       {% endif %}
     </article>
   {% endfor %}
