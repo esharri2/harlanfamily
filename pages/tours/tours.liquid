@@ -5,7 +5,7 @@
 {% endmarkdown %}
 
 <h2>Past Tours</h2>
-<ul class="toc stack">
+<ul class="stack toc--list toc">
 {% for tour in tours %}
   {% assign slug = tour.data.title | slugify %}
   <li>

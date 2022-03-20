@@ -19,6 +19,10 @@
     list-style-type: none;
   }
 
+  &--list {
+    --cols: 1;
+  }
+
   li {
     margin-left: 1em;
   }
