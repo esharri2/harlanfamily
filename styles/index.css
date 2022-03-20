@@ -12,6 +12,7 @@
 @import 'utilities/reset';
 @import 'utilities/stack';
 @import 'utilities/visually-hidden';
+@import 'utilities/width';
 @import 'utilities/with-sidebar';
 
 /* Blocks */
@@ -28,6 +29,7 @@
 @import 'blocks/header';
 @import 'blocks/hero';
 @import 'blocks/ie-notice';
+@import 'blocks/image-inset';
 @import 'blocks/input';
 @import 'blocks/link';
 @import 'blocks/markdown';

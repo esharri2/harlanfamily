@@ -1,4 +1,23 @@
+{% assign tours = collections.tour | sort: "fileSlug" | reverse %}
 
 {% markdown %}
   {%- render "content/tours.md" -%}
 {% endmarkdown %}
+
+<h2>Past Tours</h2>
+<ul class="toc stack">
+{% for tour in tours %}
+  {% assign slug = tour.data.title | slugify %}
+  <li>
+    <a href="#{{slug}}">{{ tour.data.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+{% for tour in tours %}
+  {% assign slug = tour.data.title | slugify %}
+  <article class="article stack" id={{ slug }}>
+    <h2>{{ tour.data.title }}</h2>
+    {{ tour.templateContent }}
+  </article>
+{% endfor %}

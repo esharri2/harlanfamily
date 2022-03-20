@@ -1,0 +1,22 @@
+.image-inset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+
+  figure {
+    max-width: 300px;
+  }
+}
+
+.image-inset--large {
+  figure {
+    max-width: 220px;
+  }
+}
+
+.image-inset__heading {
+  margin-top: 26px;
+  text-align: center;
+  max-width: 900px;
+}
