@@ -15,6 +15,12 @@
   }
 }
 
+.image-inset .single {
+  height: auto;
+  max-width: none;
+  width: 100%;
+}
+
 .image-inset__heading {
   margin-top: 26px;
   text-align: center;
