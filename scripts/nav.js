@@ -1,3 +1,22 @@
+const addStickyClass = (nav, navLogo) => {
+  const el = navLogo;
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      console.log("yo");
+      console.log(entry.intersectionRatio);
+      if (entry.intersectionRatio === 0) {
+        nav.classList.add("pin");
+      } else if (entry.intersectionRatio === 1) {
+        nav.classList.remove("pin");
+      }
+      // return e.target.classList.toggle("is-pinned", e.intersectionRatio < 1);
+    },
+    { threshold: [0, 1] }
+  );
+
+  observer.observe(el);
+};
+
 const initNav = () => {
   const selectors = {
     nav: ".nav",
@@ -5,6 +24,7 @@ const initNav = () => {
     toggle: ".nav__toggle",
     openIcon: ".nav__open-icon",
     closeIcon: ".nav__close-icon",
+    navLogo: ".nav__logo",
   };
 
   const elements = {};
@@ -14,6 +34,7 @@ const initNav = () => {
   elements.toggle = elements.nav.querySelector(selectors.toggle);
   elements.openIcon = elements.nav.querySelector(selectors.openIcon);
   elements.closeIcon = elements.nav.querySelector(selectors.closeIcon);
+  elements.navLogo = elements.nav.querySelector(selectors.navLogo);
 
   const bindEvents = () => {
     elements.toggle.addEventListener("click", toggle);
@@ -50,20 +71,21 @@ const initNav = () => {
     elements.body.classList.remove("scroll-lock");
   };
 
-  const toggleStickyNav = () => {
-    const body = document.querySelector("body");
-    const resizeObserver = new ResizeObserver((entries) => {
-      if (window.innerHeight > elements.nav.offsetHeight) {
-        elements.nav.classList.add("sticky");
-      } else {
-        elements.nav.classList.remove("sticky");
-      }
-    });
-    resizeObserver.observe(body);
-  };
+  // const toggleStickyNav = () => {
+  //   const body = document.querySelector("body");
+  //   const resizeObserver = new ResizeObserver((entries) => {
+  //     if (window.innerHeight > elements.nav.offsetHeight) {
+  //       elements.nav.classList.add("sticky");
+  //     } else {
+  //       elements.nav.classList.remove("sticky");
+  //     }
+  //   });
+  //   resizeObserver.observe(body);
+  // };
 
-  toggleStickyNav();
+  addStickyClass(elements.nav, elements.navLogo);
+  // toggleStickyNav();
   bindEvents();
-};
+};;
 
 export default initNav;

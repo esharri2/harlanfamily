@@ -19,7 +19,7 @@
         {% image path, "", "500px" %}
       {% endif %}
       {{ reunion.templateContent }}
-      {% if reunion.data.images %}
+            {% if reunion.data.images %}
         <h3>Gallery</h3>
         <p class="italic">Click an image to expand it.</p>
         <div class="gallery">
@@ -38,6 +38,29 @@
             </div>
           {% endfor %}
         </div>
+      {% endif %}
+      {% if reunion.data.videos %}
+        <h3>Videos</h3>
+        {% for video in reunion.data.videos %}
+          <details class="stack">
+            <summary class="link">{{ video.title }}</summary>
+            <p>{{video.description}}</p>
+            {% if video.url contains "youtube"%}
+              <iframe 
+                width="560" 
+                height="315" 
+                src="{{video.url}}" 
+                title="YouTube video player" 
+                frameborder="0"
+                showinfo="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {% elsif video.url contains "vimeo" %}
+              <iframe 
+                title="vimeo-player" 
+                src="{{ video.url }}" width="640" height="469" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+          </details>
+        {% endfor %}
       {% endif %}
       {% if reunion.data.newsletterLink and reunion.data.newsletter %}
         <p>More detailed information on the Celebration {{ reunion.data.no }} reunion is available in the <a href="{{ reunion.data.newsletterLink }}">{{ reunion.data.newsletter }}.</a></p>
