@@ -18,6 +18,9 @@
         {% assign path = "./images/" | append: reunion.data.cover %}
         {% image path, "", "500px" %}
       {% endif %}
+      {% if reunion.data.newsletterLink and reunion.data.newsletter %}
+        <p>More detailed information on the Celebration {{ reunion.data.no }} reunion is available in the <a href="{{ reunion.data.newsletterLink }}">{{ reunion.data.newsletter }}.</a></p>
+      {% endif %}
       {{ reunion.templateContent }}
             {% if reunion.data.images %}
         <h3>Gallery</h3>
@@ -61,9 +64,6 @@
             {% endif %}
           </details>
         {% endfor %}
-      {% endif %}
-      {% if reunion.data.newsletterLink and reunion.data.newsletter %}
-        <p>More detailed information on the Celebration {{ reunion.data.no }} reunion is available in the <a href="{{ reunion.data.newsletterLink }}">{{ reunion.data.newsletter }}.</a></p>
       {% endif %}
     </article>
   {% endfor %}

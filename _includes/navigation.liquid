@@ -11,33 +11,33 @@
       <header><a href="/">{{ meta.title }}</a></header>
     </div>
     <div class="nav__logo hidden-medium">
-        <a aria-label="home" href="/">{% image "./images/logo.jpg", "Harlan Family of America logo", "300px", "300,600" %}</a>
+        <a aria-label="home" href="/">{%- image "./images/logo.jpg", "Harlan Family of America logo", "300px", "300,600" -%}</a>
     </div>
     <ul
         class="nav__link-list reset stack hidden-medium"
         id="menuItems">
-        {% render 'navigation-quick', data: navigation-quick-data %}
-        {% for section in data %}
+        {%- render 'navigation-quick', data: navigation-quick-data -%}
+        {%- for section in data -%}
             <p class="nav__section-title">{{section.name}}</p>
-            {% for item in section.pages %}
-              {% assign navDataKey = item.key | append: ".html"%}
-              {% if page.url == navDataKey %}
-                  {% assign activeClasses = 'active'%}
-                  {% assign currentAttribute = 'aria-current="page"' %}
-              {% else %}
-                  {% assign activeClasses = null %}
-                  {% assign currentAttribute = null %}
-              {% endif %}
+            {%- for item in section.pages -%}
+              {%- assign navDataKey = item.key | append: ".html" -%}
+              {%- if page.url == navDataKey -%}
+                  {%- assign activeClasses = 'active'%}
+                  {%- assign currentAttribute = 'aria-current="page"' -%}
+              {%- else -%}
+                  {%- assign activeClasses = null -%}
+                  {%- assign currentAttribute = null -%}
+              {%- endif -%}
               <li class="{{activeClasses}}" {{currentAttribute}}>
                   <a class="link" href="{{item.key}}.html">{{item.title}}</a>
               </li>
-            {% endfor %}
-        {% endfor %}
+            {%- endfor -%}
+        {%- endfor -%}
         <div class="nav__social">
-          {% for social in social-media %}
-            {% assign iconPath = "/_includes/icons/" | append: social.icon %}
+          {%- for social in social-media -%}
+            {%- assign iconPath = "/_includes/icons/" | append: social.icon -%}
             <a href="{{social.url}}"><span class="visually-hidden">{{social.name}}</span>{{ iconPath | svgContents }}</a>
-          {% endfor %}
+          {%- endfor -%}
         </div>
     </ul>
 </nav>
