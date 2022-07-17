@@ -2,14 +2,11 @@ const addStickyClass = (nav, navLogo) => {
   const el = navLogo;
   const observer = new IntersectionObserver(
     ([entry]) => {
-      console.log("yo");
-      console.log(entry.intersectionRatio);
       if (entry.intersectionRatio === 0) {
         nav.classList.add("pin");
       } else if (entry.intersectionRatio === 1) {
         nav.classList.remove("pin");
       }
-      // return e.target.classList.toggle("is-pinned", e.intersectionRatio < 1);
     },
     { threshold: [0, 1] }
   );
