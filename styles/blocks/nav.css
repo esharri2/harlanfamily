@@ -23,10 +23,13 @@
     top: var(--space-l);
 
     &.pin {
-      max-height: calc(99vh + 230px);
       position: sticky;
-      overflow-y: auto;
       top: -230px;
+
+      .nav__link-list {
+        max-height: 99vh;
+        overflow-y: auto;
+      }
     }
   }
 

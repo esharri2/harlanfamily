@@ -80,9 +80,9 @@ const initNav = () => {
   //   resizeObserver.observe(body);
   // };
 
-  // addStickyClass(elements.nav, elements.navLogo);
+  addStickyClass(elements.nav, elements.navLogo);
   // toggleStickyNav();
   bindEvents();
-};;
+};
 
 export default initNav;

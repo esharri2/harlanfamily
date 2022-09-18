@@ -9,7 +9,7 @@
 
 {% for person in people %}
   <p><strong class="name">{{person.firstName}} {{person.lastName}} </strong>{{person.bio}}</p>
-{% endfor %}
+  {% endfor %}
 <style>
 .name {
   text-transform: capitalize;

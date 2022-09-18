@@ -7,7 +7,7 @@
   {% for image in images %}
   <div class="hero__image">
     {% assign path = "./images/" | append: image %}
-    {% image path, "", "50vw" %}
+    {% image path, "", "50vw", undefined, "eager" %}
   </div>
   {% endfor %}
   <div class="hero__content">
