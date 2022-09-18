@@ -3,7 +3,7 @@
   margin-top: var(--space-xxl);
   margin-bottom: var(--space-xl);
 
- @media (min-width: 768px) {
+ @media (min-width: 1008px) {
     margin-top: 0;
  }
 }

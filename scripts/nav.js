@@ -1,18 +1,18 @@
-const addStickyClass = (nav, navLogo) => {
-  const el = navLogo;
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.intersectionRatio === 0) {
-        nav.classList.add("pin");
-      } else if (entry.intersectionRatio === 1) {
-        nav.classList.remove("pin");
-      }
-    },
-    { threshold: [0, 1] }
-  );
+// const addStickyClass = (nav, navLogo) => {
+//   const el = navLogo;
+//   const observer = new IntersectionObserver(
+//     ([entry]) => {
+//       if (entry.intersectionRatio === 0) {
+//         nav.classList.add("pin");
+//       } else if (entry.intersectionRatio === 1) {
+//         nav.classList.remove("pin");
+//       }
+//     },
+//     { threshold: [0, 1] }
+//   );
 
-  observer.observe(el);
-};
+//   observer.observe(el);
+// };
 
 const initNav = () => {
   const selectors = {
@@ -80,7 +80,7 @@ const initNav = () => {
   //   resizeObserver.observe(body);
   // };
 
-  addStickyClass(elements.nav, elements.navLogo);
+  // addStickyClass(elements.nav, elements.navLogo);
   // toggleStickyNav();
   bindEvents();
 };
