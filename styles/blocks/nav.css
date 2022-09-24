@@ -19,16 +19,6 @@
 
     align-self: flex-start;
     top: var(--space-l);
-
-    &.pin {
-      position: sticky;
-      top: -230px;
-
-      .nav__link-list {
-        max-height: 99vh;
-        overflow-y: auto;
-      }
-    }
   }
 
   &__button-bar {
@@ -61,6 +51,7 @@
     background-color: var(--color-background);
     bottom: 0;
     left: 0; 
+    overflow: auto;
     padding: var(--nav-list-padding) !important;
     position: var(--nav-position);
     right: 0;
