@@ -7,6 +7,7 @@
   --nav-transform: translateX(-100vw);
   --nav-list-padding: calc(var(--link-list-p, 0) + var(--p-t)) var(--link-list-p, 0) var(--link-list-p, 0);
   --quick-display: block;
+  --overflow: auto;
   
   @media (min-width: 1008px) {
     --p-t: 0;
@@ -15,6 +16,7 @@
     --nav-position: static;
     --nav-transform: none;
     --nav-list-padding: 0;
+    --overflow: visible;
     --quick-display: none;
 
     align-self: flex-start;
@@ -51,7 +53,7 @@
     background-color: var(--color-background);
     bottom: 0;
     left: 0; 
-    overflow: auto;
+    overflow: var(--overflow);
     padding: var(--nav-list-padding) !important;
     position: var(--nav-position);
     right: 0;
