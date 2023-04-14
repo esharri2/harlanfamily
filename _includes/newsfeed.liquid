@@ -4,9 +4,9 @@
     {% if posts.length == 0 %}
       <p>There are no recent updates.</p>
     {% else %}
-      {% assign posts = posts | reverse %}
+      {% assign sorted_posts = posts | reverse %}
       <ul class="reset">
-        {% for post in posts limit:5 %}
+        {% for post in sorted_posts limit:5 %}
           <li class="newsfeed__item">
             <a class="link" href="{{ post.url }}">
               <p class="newsfeed__item-title">{{post.data.title}}</p>
