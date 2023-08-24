@@ -4,7 +4,6 @@
   {%- render "content/tours.md" -%}
 {% endmarkdown %}
 
-<h2>Past Tours</h2>
 <ul class="stack toc--list toc">
 {% for tour in tours %}
   {% assign slug = tour.data.title | slugify %}
