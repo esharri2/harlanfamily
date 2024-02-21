@@ -1,5 +1,16 @@
 {% assign reunions = collections.reunion | sort: "fileSlug" | reverse %}
 
+<style>
+  /* quick fix until we get content for this reunion */
+  article:first-of-type img {
+    width: 315px;
+  }
+
+  article:nth-of-type(2) {
+    clear: both;
+  }
+</style>
+
 <div class="stack">
   <h2>Contents</h2>
   <ul class="toc stack">
