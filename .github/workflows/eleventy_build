@@ -1,7 +1,11 @@
 name: Eleventy Build
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
-
 jobs:
+  test: 
+    runs-on: ubuntu-18.04
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
   build_deploy:
     runs-on: ubuntu-18.04
     steps:
