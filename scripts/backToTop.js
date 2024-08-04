@@ -3,7 +3,7 @@ const backToTop = () => {
   const backToTopFlag = document.querySelector("#backToTopFlag");
   const toggleClasses = ["hidden"];
 
-  // test
+  // test again
 
   const showButton = () => {
     // Unhide
