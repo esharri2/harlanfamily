@@ -3,6 +3,8 @@ const backToTop = () => {
   const backToTopFlag = document.querySelector("#backToTopFlag");
   const toggleClasses = ["hidden"];
 
+  // test
+
   const showButton = () => {
     // Unhide
     backToTopEl.classList.remove(...toggleClasses);
