@@ -7,6 +7,7 @@ const addFilters = require("./config/filters");
 
 module.exports = function (eleventyConfig) {
   const { Liquid } = require("liquidjs");
+  console.log("Config Liquid...");
   eleventyConfig.setLibrary(
     "liquid",
     new Liquid({
