@@ -10,9 +10,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary(
     "liquid",
     new Liquid({
-      root: "../_includes",
+      root: "./_includes",
       extname: ".liquid",
       strictFilters: true,
+      dynamicPartials: true,
     })
   );
 

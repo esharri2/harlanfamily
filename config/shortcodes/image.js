@@ -8,7 +8,13 @@ const image = (eleventyConfig) => {
 
   eleventyConfig.addShortcode(
     "image",
-    async (src, alt = "", sizes, widths = "400,600,800,1200", eager) => {
+    async (
+      src,
+      alt = "",
+      sizes = "80vw",
+      widths = "400,600,800,1200",
+      eager
+    ) => {
       const widthsArray = widths.split(",").map((width) => Number(width));
       let metadata = await Image(src, {
         widths: widthsArray,
