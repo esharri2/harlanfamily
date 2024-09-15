@@ -1,4 +1,4 @@
-The following information for the first generations of Harlan(d)s is quoted from the *History and genealogy of the Harlan family, and particularly of the descendants of George and Michael Harlan, who settled in Chester County, Pa., 1687* by Alpheus Harlan. The numbering system also follows that which is in the book. The book is no longer available but can be [viewed online](http://www.archive.org/stream/historygenealogy00harl/). A PDF version of the book can be downloaded by clicking [here](/docs/Alpheus_book.pdf).
+The following information for the first generations of Harlan(d)s is quoted from the *History and genealogy of the Harlan family, and particularly of the descendants of George and Michael Harlan, who settled in Chester County, Pa., 1687* by Alpheus Harlan. The numbering system also follows that which is in the book. The book is no longer available but can be [viewed online](http://www.archive.org/stream/historygenealogy00harl/). A PDF version of the book can be downloaded by clicking [here](https://github.com/esharri2/files/blob/master/Alpheus_book.pdf?raw=true).
 
 Preface by Alpheus H. Harlan:
 
