@@ -1,53 +1,56 @@
-{% assign reunions = collections.reunion | sort: "fileSlug" | reverse %}
+{% assign reunions = collections.reunion | sort: 'fileSlug' | reverse %}
 
 <style>
   /* quick fix until we get content for this reunion */
-  article:first-of-type img {
-    width: 315px;
+  article:nth-of-type(3) {
+    clear: both;
   }
 
-  article:nth-of-type(2) {
-    clear: both;
+  article:nth-of-type(2) img {
+    width: 315px;
   }
 </style>
 
 <div class="stack">
   <h2>Contents</h2>
   <ul class="toc stack">
-  {% for reunion in reunions %}
-    {% assign slug = reunion.data.title | slugify %}
-    <li>
-      <a href="#{{slug}}">{{ reunion.data.title }}</a>
-    </li>
-  {% endfor %}
+    {% for reunion in reunions %}
+      {% assign slug = reunion.data.title | slugify %}
+      <li>
+        <a href="#{{slug}}">{{ reunion.data.title }}</a>
+      </li>
+    {% endfor %}
   </ul>
   {% for reunion in reunions %}
     {% assign slug = reunion.data.title | slugify %}
-    <article class="article stack" id={{ slug }}>
+    <article class="article stack" id="{{ slug }}">
       <h2>{{ reunion.data.title }}</h2>
       {% if reunion.data.cover %}
-        {% assign path = "./images/" | append: reunion.data.cover %}
+        {% assign path = './images/' | append: reunion.data.cover %}
         {% image path, "", "500px" %}
       {% endif %}
       {% if reunion.data.newsletterLink and reunion.data.newsletter %}
-        <p>More detailed information on the Celebration {{ reunion.data.no }} reunion is available in the <a href="{{ reunion.data.newsletterLink }}">{{ reunion.data.newsletter }}.</a></p>
+        <p>
+          More detailed information on the Celebration {{ reunion.data.no }} reunion is available in the
+          <a href="{{ reunion.data.newsletterLink }}">{{ reunion.data.newsletter }}.</a>
+        </p>
       {% endif %}
       {{ reunion.templateContent }}
-            {% if reunion.data.images %}
+      {% if reunion.data.images %}
         <h3>Gallery</h3>
         <p class="italic">Click an image to expand it.</p>
         <div class="gallery">
           {% for image in reunion.data.images %}
-          {% assign path = "./images/" | append: image.file %}
+            {% assign path = './images/' | append: image.file %}
             <div data-modal>
               <button class="reset" data-modal-trigger>
                 {% image path, "", "300px" %}
               </button>
               <figure class="gallery__modal-content">
-              {% image path, "", "700px" %}
-              {% if image.caption %}
-                <figcaption>{{image.caption}}</figcaption>
-              {% endif %}
+                {% image path, "", "700px" %}
+                {% if image.caption %}
+                  <figcaption>{{ image.caption }}</figcaption>
+                {% endif %}
               </figure>
             </div>
           {% endfor %}
@@ -58,20 +61,27 @@
         {% for video in reunion.data.videos %}
           <details class="stack">
             <summary class="link">{{ video.title }}</summary>
-            <p>{{video.description}}</p>
-            {% if video.url contains "youtube"%}
-              <iframe 
-                width="560" 
-                height="315" 
-                src="{{video.url}}" 
-                title="YouTube video player" 
+            <p>{{ video.description }}</p>
+            {% if video.url contains 'youtube' %}
+              <iframe
+                width="560"
+                height="315"
+                src="{{video.url}}"
+                title="YouTube video player"
                 frameborder="0"
-                showinfo="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            {% elsif video.url contains "vimeo" %}
-              <iframe 
-                title="vimeo-player" 
-                src="{{ video.url }}" width="640" height="469" frameborder="0" allowfullscreen></iframe>
+                showinfo="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            {% elsif video.url contains 'vimeo' %}
+              <iframe
+                title="vimeo-player"
+                src="{{ video.url }}"
+                width="640"
+                height="469"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
             {% endif %}
           </details>
         {% endfor %}
@@ -79,4 +89,3 @@
     </article>
   {% endfor %}
 </div>
-

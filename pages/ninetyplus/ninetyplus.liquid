@@ -1,23 +1,27 @@
-{% assign people = ninety | sort: "lastName" %}
-
+{% assign people = ninety | sort: 'lastName' %}
 
 <div class="stack">
+  {% markdown %}
+  {%- render 'content/ninety-intro.md' -%}
+  {% endmarkdown %}
 
-{% markdown %}
-  {%- render "content/ninety-intro.md" -%}
-{% endmarkdown %}
-
-{% for person in people %}
-  <p><strong class="name">{{person.firstName}} {{person.lastName}} </strong>{{person.bio}}</p>
-  <hr/>
+  {% for person in people %}
+    <p>
+      <strong class="name">
+        {{- person.firstName }}
+        {{ person.lastName }}
+      </strong>
+      {{- person.bio }}
+    </p>
+    <hr>
   {% endfor %}
-<style>
-.name {
-  text-transform: capitalize;
-}
+  <style>
+    .name {
+      text-transform: capitalize;
+    }
 
-br {
-  line-height: 25px;
-}
-</style>
+    br {
+      line-height: 25px;
+    }
+  </style>
 </div>

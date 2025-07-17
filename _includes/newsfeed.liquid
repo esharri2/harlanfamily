@@ -1,42 +1,42 @@
-{% unless posts.length == 0 and events.length == 0 %}
-<aside class="newsfeed">
-  <!-- {% unless events.length == 0 %}
-  <h2 class="newsfeed__title h3">Upcoming events</h2>
-  <ul>
-    {% assign sorted_events = events | reverse %} {% for post in sorted_events
-    limit:3 %}
-    <li class="newsfeed__item">
-      <a class="link" href="{{ post.url }}">
-        <p class="newsfeed__item-title">{{ post.title }}</p>
-        <p class="newsfeed__item-date">Posted: {% prettyDate post.data.date %}</p>
-        <p>{{ post.description }}</p>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endunless %} -->
-  <h2 class="newsfeed__title h3">Recent news</h2>
-  {% if posts.length == 0 %}
-  <p>There are no recent updates.</p>
-  {% else %} {% assign sorted_posts = posts | reverse %}
-  <ul class="reset">
-    {% for post in sorted_posts limit:3 %}
-    <li class="newsfeed__item">
-      <a class="link" href="{{ post.url }}">
-        <p class="newsfeed__item-title">{{ post.data.title }}</p>
-        <p class="newsfeed__item-date">
-          Posted: {% prettyDate post.data.date %}
-        </p>
-        <p class="newsfeed__item-date">Read more...</p>
+{% unless posts.size == 0 and events.size == 0 %}
+  <aside class="newsfeed">
+    {% unless events.size == 0 %}
+      <h2 class="newsfeed__title h3">Upcoming events</h2>
+      <ul class="reset">
+        {% for event in events %}
+          <li class="newsfeed__item">
+            <a class="link" href="{{ event.url }}">
+              <p class="newsfeed__item-title">{{ event.title }}</p>
+              <p class="newsfeed__item-date">Posted: {% prettyDate event.postedDate %}</p>
+              <p class="newsfeed__item-date">Read more...</p>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endunless %}
+    <h2 class="newsfeed__title h3">Recent news</h2>
+    {% if posts.length == 0 %}
+      <p>There are no recent updates.</p>
+    {% else %}
+      {% assign sorted_posts = posts | reverse %}
+      <ul class="reset">
+        {% for post in sorted_posts limit: 3 %}
+          <li class="newsfeed__item">
+            <a class="link" href="{{ post.url }}">
+              <p class="newsfeed__item-title">{{ post.data.title }}</p>
+              <p class="newsfeed__item-date">Posted: {% prettyDate post.data.date %}</p>
+              <p class="newsfeed__item-date">Read more...</p>
 
-        {% if post.data.image %}
-        {% image post.data.image, post.data.imageAlt,
-        "100vw" %}
-        {% endif %}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-</aside>
+              {% if post.data.image %}
+                {%
+                  image post.data.image, post.data.imageAlt,
+                  "100vw"
+                %}
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </aside>
 {% endunless %}
