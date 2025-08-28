@@ -139,6 +139,8 @@ Tragically, in 1790 AD, a fire consumed many of St. Peter's Church's ancient par
 
 Though the monastery is long gone and much of the original church has been lost to time, St. Peters Church still stands as a living monument. The original Anglo-Saxon stones of the west wall endure not just as architectural marvels, but as witnesses to English history. They have seen centuries of faith and conflict, ruin and rebirth. They stood as Saint Bede passed through them, and centuries later, they stood as James Harland and his wife entered with their sons for their baptism (Figure 7).
 
+<div style="clear:both"></div>
+
 ## A Family Connection to a Monument of History
 
 On May 27, 2025 AD, several members of the _Harlan Family in America_ made a pilgrimage to Monkwearmouth (Figure 8) in Sunderland, England. We, too, passed through the same stones of St. Peter's west wall that our ancestors did over 350 years ago, and in doing so, we made a connection across oceans and generations to the sacred place where the story of the Harlan family begins.
