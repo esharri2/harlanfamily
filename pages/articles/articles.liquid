@@ -1,0 +1,17 @@
+work in progress
+
+<!--
+  {% assign articles = collections.article | sort: 'fileSlug' | reverse %}
+
+  {% markdown %}
+  {%- render 'content/articles.md' -%}
+  {% endmarkdown %}
+
+  <ul class="stack toc--list toc">
+    {% for article in articles %}
+      <li>
+        <a href="#{{slug}}">{{ tour.data.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+-->

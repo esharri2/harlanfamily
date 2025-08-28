@@ -9,6 +9,12 @@
   }
 }
 
+.image-inset--no-max {
+  figure {
+    max-width: unset;
+  }
+}
+
 .image-inset--large {
   figure {
     max-width: 220px;
