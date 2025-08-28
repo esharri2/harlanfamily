@@ -101,7 +101,7 @@ Unfortunately, over the centuries, the Wearmouth–Jarrow monastery endured wave
 
 Following the Norman Conquest, William the Conqueror ordered the monastery restored6. In the 11th century, it was revived as a Benedictine chapter under the Abbey of Durham. Later centuries saw Monkwearmouth become a simple and quiet English parish church, though its walls still echoed with the weight of history.
 
- <div style="max-width: 800px;" class="fig">
+ <div style="max-width: 320px;" class="fig fig--right">
   <figure style="" class="align-full width-fit">
     {% assign file = 'monk_image4.jpg'%}
     {% assign path = "./images/" | append: file %}
