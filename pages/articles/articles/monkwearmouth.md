@@ -141,9 +141,7 @@ Though the monastery is long gone and much of the original church has been lost 
 
 ## A Family Connection to a Monument of History
 
-On May 27, 2025 AD, several members of the _Harlan Family in America_ made a pilgrimage to Monkwearmouth
-
-(Figure 8\) in Sunderland, England. We, too, passed through the same stones of St. Peter's west wall that our ancestors did over 350 years ago, and in doing so, we made a connection across oceans and generations to the sacred place where the story of the Harlan family begins.
+On May 27, 2025 AD, several members of the _Harlan Family in America_ made a pilgrimage to Monkwearmouth (Figure 8) in Sunderland, England. We, too, passed through the same stones of St. Peter's west wall that our ancestors did over 350 years ago, and in doing so, we made a connection across oceans and generations to the sacred place where the story of the Harlan family begins.
 
 Our family connection to St. Peter's in Monkwearmouth, once a central institution of early English Christianity and currently an operating parish, reflects a documented link to one of the oldest parish churches in Britain. It is a point of origin that anchors our family history in a place of national significance. What an incredible thing to be proud of and excited about!
 
