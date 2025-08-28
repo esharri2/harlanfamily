@@ -132,8 +132,8 @@ Tragically, in 1790 AD, a fire consumed many of St. Peter's Church's ancient par
     {% image path, "A man smiling next to St. Peter's batismal font" %}
   </figure>
 
-  <div class="figcaption"><b>Figure 6. </b>
-  Located on the floor of the nave at the west end of St. Peter's lies a baptismal font, circa 1235\. Could this font have been used during the baptism of our ancestors?
+  <div class="figcaption"><b>Figure 7. </b>
+  Located on the floor of the nave at the west end of St. Peter's lies a baptismal font, circa 1235. Could this font have been used during the baptism of our ancestors?
   </div>
 </div>
 
@@ -172,12 +172,12 @@ As Harlan descendants, we carry with us not just a name, but a legacy rooted in 
   A personal genealogical summary placing George Harlan in the broader context of 17th- century Quaker migration and religious history.
   </li>
   <li id="fn_3">
-  "St Peter's Church, Monkwearmouth." <i>Wikipedia</i>, last modified 2024. <a href="https://en.wikipedia.org/wiki/St\_Peter%27s\_Church,\_Monkwearmouth">https://en.wikipedia.org/wiki/St\_Peter%27s\_Church,\_Monkwearmouth</a>
+  "St Peter's Church, Monkwearmouth." <i>Wikipedia</i>, last modified 2024. <a href="https://en.wikipedia.org/wiki/St_Peter%27s_Church,_Monkwearmouth">https://en.wikipedia.org/wiki/St_Peter%27s_Church,_Monkwearmouth</a>
   <br>
   Overview of the church's historical, architectural, and religious significance from its founding to modern restoration.
   </li>
   <li id="fn_4">
-  "Benedict Biscop." <i>Wikipedia</i>, last modified 2024. <a href="https://en.wikipedia.org/wiki/Benedict\_Biscop">https://en.wikipedia.org/wiki/Benedict\_Biscop</a><br>
+  "Benedict Biscop." <i>Wikipedia</i>, last modified 2024. <a href="https://en.wikipedia.org/wiki/Benedict_Biscop">https://en.wikipedia.org/wiki/Benedict_Biscop</a><br>
 
 Biography of the church founder, his travels to Rome, role in establishing a center of learning, and architectural innovations at Monkwearmouth-Jarrow.
 
