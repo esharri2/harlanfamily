@@ -23,12 +23,12 @@
   --color-red: #c70000;
   --color-silver-sand: #bcbdc0;
   --color-text: var(--color-jet);
-  --color-background: var(--color-ivory); 
-  --color-accent: var(--color-red); 
-  --color-accent-secondary: var(--color-minsk); 
-  --color-accent-light: var(--color-silver-sand); 
+  --color-background: var(--color-ivory);
+  --color-accent: var(--color-red);
+  --color-accent-secondary: var(--color-minsk);
+  --color-accent-light: var(--color-silver-sand);
 
-  --font-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --font-title: "Vidaloka", Georgia, sans-serif;
   --font-size-xl: 3rem;
   --font-size-l: 2.2rem;
@@ -42,8 +42,10 @@
     --font-size-s: 1.2rem;
   }
 
-  --shadow-s: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  --shadow-m: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12),
+  0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-m: 0 14px 28px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.22);
 
   --space-s: .8rem;
   --space-m: 1.6rem;
