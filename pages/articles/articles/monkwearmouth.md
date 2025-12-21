@@ -19,7 +19,7 @@ At the mouth of the River Wear in Sunderland, England, stands a church that has 
     {% assign path = "./images/" | append: file %}
     {% image path, "St. Peter's Church, north view" %}
   </figure>
-  <div class="figcaption"><b>Figure 1. </b>St. Peter's Church, Monkwearmouth. <b>Left</b>: West view of the church. The wall behind the tower dates to 674 AD and is original to the church. See Figure 5 and 6\. The tower was added in sections throughout the late 7th century and 11th century. <b>Right</b>: North view of the church.</div>
+  <div class="figcaption"><b>Figure 1. </b>St. Peter's Church, Monkwearmouth. <b>Left</b>: West view of the church. The wall behind the tower dates to 674 AD and is original to the church. See Figure 5 and 6. The tower was added in sections throughout the late 7th century and 11th century. <b>Right</b>: North view of the church.</div>
 </div>
 
 ## The Harlan Family and the St. Peter's Church of Monkwearmouth
@@ -35,7 +35,7 @@ He also notes that James's children were baptized and recorded within the Church
     {% image path, "Document showing baptism record of George Harlan" %}
   </figure>
 
-  <div class="figcaption"><b>Figure 2. </b>Kennett Monthly Meeting, Pennsylvania, record of baptism of George Harlan <sup><a href="fn_2">2</a></sup>. The line (red arrow) reads "George Harlan, Son of James Harlan of Monkwearmouth was baptized at Monkwearmouth in Old England on the 11th day of March 1650."</div>
+  <div class="figcaption"><b>Figure 2. </b>Kennett Monthly Meeting, Pennsylvania, record of baptism of George Harlan <sup><a href="#fn_2">2</a></sup>. The line (red arrow) reads "George Harlan, Son of James Harlan of Monkwearmouth was baptized at Monkwearmouth in Old England on the 11th day of March 1650."</div>
 </div>
 
 This detail is confirmed in a Quaker record from the Kennett Monthly Meeting in Pennsylvania (Figure 2), which indeed documents George Harlan's baptism on March 11, 1650 AD, at Monkwearmouth. This entry, made decades later by George at a meeting of the Religious Society of Friends, reflects one of the earliest documented moments in our family's known history. While it is reasonable to assume that George's brothers were baptized at St. Peter's, and that James and his wife were married there, it is George's sole baptismal record that provides us with a direct and recorded link to this historic church.
@@ -89,7 +89,7 @@ By the early 8th century, the combined monasteries of Wearmouth (Figure 5) and J
   </figure>
 
   <div class="figcaption"><b>Figure 5. </b>
-  This illustration <sup><a href="#fn_7">7</a></sup> shows the original appearance of St. Peter's and the monastery at Wearmouth. The narthex (red arrow) became the base of the tower still standing today (Figure 1). Two original windows (red circle) on the west wall, now obscured outside by the tower, are visible from within the church (Figure 5).
+  This illustration <sup><a href="#fn_7">7</a></sup> shows the original appearance of St. Peter's and the monastery at Wearmouth. The narthex (red arrow) became the base of the tower still standing today (Figure 1). Two original windows (red circle) on the west wall, now obscured outside by the tower, are visible from within the church (Figure 6).
   </div>
 </div>
 
@@ -97,9 +97,9 @@ By the early 8th century, the combined monasteries of Wearmouth (Figure 5) and J
 
 ## Monastic Glory, Viking Destruction, and Rebirth
 
-Unfortunately, over the centuries, the Wearmouth–Jarrow monastery endured waves of destruction and fires. The first major blow came in 794 AD, when Danish Vikings raided the monastery at Jarrow, killing monks and looting sacred relics. A second attack in Monkwearmouth followed around 798 AD, leaving the buildings of St. Peter's damaged and the monastic community scattered6. These assaults marked the beginning of Viking incursions into the Kingdom of Northumbria, and although some rebuilding occurred in the following decades, the twin monasteries never regained their former prominence. By the 9th century, they had largely fallen into decline, and much of their scholarly activity ceased.
+Unfortunately, over the centuries, the Wearmouth–Jarrow monastery endured waves of destruction and fires. The first major blow came in 794 AD, when Danish Vikings raided the monastery at Jarrow, killing monks and looting sacred relics. A second attack in Monkwearmouth followed around 798 AD, leaving the buildings of St. Peter's damaged and the monastic community scattered <sup><a href="#fn_6">6</a></sup>. These assaults marked the beginning of Viking incursions into the Kingdom of Northumbria, and although some rebuilding occurred in the following decades, the twin monasteries never regained their former prominence. By the 9th century, they had largely fallen into decline, and much of their scholarly activity ceased.
 
-Following the Norman Conquest, William the Conqueror ordered the monastery restored6. In the 11th century, it was revived as a Benedictine chapter under the Abbey of Durham. Later centuries saw Monkwearmouth become a simple and quiet English parish church, though its walls still echoed with the weight of history.
+Following the Norman Conquest, William the Conqueror ordered the monastery restored <sup><a href="#fn_6">6</a></sup>. In the 11th century, it was revived as a Benedictine chapter under the Abbey of Durham. Later centuries saw Monkwearmouth become a simple and quiet English parish church, though its walls still echoed with the weight of history.
 
  <div style="max-width: 320px;" class="fig fig--right">
   <figure style="" class="align-full width-fit">
@@ -117,7 +117,7 @@ I can't help but wonder when the Harlans first came to Monkwearmouth, and how de
 
 ## Anglo-Saxon Architecture: A Living Monument
 
-St. Peter's Church still preserves several remarkable examples of its original Anglo-Saxon architecture. The west wall (Figure 6), constructed in 674 AD, is the only surviving part of the original church built under Benedict Biscop, and it remains a rare and invaluable link to England's early Christian era <sup><a href="#fn_3">3, </a></sup><sup><a href="#fn_6">6</a></sup>. The quality and strength of the Anglo-Saxon mortar used during construction of the original monastery is the reason the west wall of the church is still standing. Anglo-Saxon mortar hardened with age and was similar in mixture and average particle size to mortar used today8. Additionally, the decorative door arch, carved stonework, and even fragments of stained glass, all revolutionary features at the time, remain as some of the earliest surviving examples of stone ecclesiastical architecture in England.
+St. Peter's Church still preserves several remarkable examples of its original Anglo-Saxon architecture. The west wall (Figure 6), constructed in 674 AD, is the only surviving part of the original church built under Benedict Biscop, and it remains a rare and invaluable link to England's early Christian era <sup><a href="#fn_3">3, </a></sup><sup><a href="#fn_6">6</a></sup>. The quality and strength of the Anglo-Saxon mortar used during construction of the original monastery is the reason the west wall of the church is still standing. Anglo-Saxon mortar hardened with age and was similar in mixture and average particle size to mortar used today <sup><a href="#fn_8">8</a></sup>. Additionally, the decorative door arch, carved stonework, and even fragments of stained glass, all revolutionary features at the time, remain as some of the earliest surviving examples of stone ecclesiastical architecture in England.
 
 These elements weren't just artistic flourishes. They were intentional ekorts by Benedict Biscop to model English Christianity on the continental church, importing not just theology, but culture, art, and scholarship <sup><a href="#fn_4">4</a></sup>. The church was one of the first buildings in England to incorporate glass windows, and it housed one of the greatest libraries in Europe at the time, enabling Bede and others to preserve and transmit knowledge that helped shape Western civilization<sup><a href="#fn_4">4, </a></sup><sup><a href="#fn_5">5</a></sup>.
 

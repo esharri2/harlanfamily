@@ -91,6 +91,12 @@ const pages = [
     description: "",
   },
   {
+    key: "/monkwearmouth",
+    title: "St. Peter's Church",
+    section: sections.history,
+    description: "",
+  },
+  {
     key: "/irish-interlude",
     title: "Irish Interlude",
     section: sections.history,
