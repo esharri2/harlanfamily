@@ -1,8 +1,11 @@
+<p>
+  To find information about a particular topic, view the <a href="/record/Harlan_Index.pdf">Harlan Record Index</a>,
+  last updated March 2026.
+</p>
 <ul class="toc toc--simple stack">
   {% for record in newsletters %}
-  <li>
-    <a href="{{record.link}}">{{record.title}}</a>
-  </li>
+    <li>
+      <a href="{{record.link}}">{{ record.title }}</a>
+    </li>
   {% endfor %}
 </ul>
-
