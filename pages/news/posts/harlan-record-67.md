@@ -1,5 +1,5 @@
 ---
-title: Read the Spring 2027 Harlan Record
+title: Read the Spring 2026 Harlan Record
 date: 2026-04-28
 permalink: "{{page.filePathStem}}.html"
 ---
