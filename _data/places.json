@@ -1188,5 +1188,27 @@
     "state": "WY",
     "location": "431230N/1054156W (GNIS/2004)",
     "history": "-"
+  },
+
+  {
+    "name": "Harlan County",
+    "county": "Harlan",
+    "state": "NE",
+    "location": "South Central Nebraska near the Kansas state line.",
+    "history": "Alma is the county seat. In 1871, a party from the Wyoming Territory, led by Thomas Harlan (#2293), settled near present-day Alma, which was named after a settler's daughter. In that year, Harlan County was separated from Lincoln County by the Nebraska state legislature. Accounts differ as to the county's namesake: either Thomas Harlan, or James Harlan, who was U.S. Secretary of the Interior between 1865 and 1866."
+  },
+  {
+    "name": "Harlan High School",
+    "county": "Cook",
+    "state": "IL",
+    "location": "9652 South Michigan Ave, Chicago",
+    "history": "Full name is John Marshall Harlan Community Academy High School. Founded in 1958."
+  },
+  {
+    "name": "Harlan Farm Road",
+    "county": "Laurens",
+    "state": "SC",
+    "location": "Located off of State Highway 92.",
+    "history": "Henry Benjamin Harlan, son of Mason (#2439) and Ida Mae (Parsons) Harlan."
   }
 ]

@@ -18,13 +18,11 @@
     margin: 0 auto;
     max-width: 900px;
     padding: 0 var(--space-m);
+    text-wrap: balance;
   }
 
   @media (min-width: 768px) {
     font-size: var(--font-size-m);
     margin-top: 0;
   }
-
 }
-
-
