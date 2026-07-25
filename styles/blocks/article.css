@@ -1,4 +1,5 @@
 .article {
+  min-height: 400px;
   figure {
     float: left;
     max-width: 100%;
@@ -49,5 +50,9 @@
 
   &__by {
     font-style: italic;
+  }
+
+  .clear {
+    clear: both;
   }
 }

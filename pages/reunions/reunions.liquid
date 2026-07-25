@@ -2,17 +2,21 @@
 
 <style>
   /* quick fix until we get content for this reunion */
-  article:nth-of-type(3) {
+  /* article:nth-of-type(3) {
     clear: both;
   }
 
   article:nth-of-type(2) img {
     width: 315px;
-  }
+  } */
 
   /* Keep reunion logos from being too big */
   h2 + img {
-    max-width: min(500px, 100%);
+    max-width: 100%;
+
+    @media (min-width: 768px) {
+      max-width: 280px;
+    }
   }
 </style>
 
@@ -28,7 +32,7 @@
   </ul>
   {% for reunion in reunions %}
     {% assign slug = reunion.data.title | slugify %}
-    <article class="article stack" id="{{ slug }}">
+    <article class=" clear article stack" id="{{ slug }}">
       <h2>{{ reunion.data.title }}</h2>
       {% if reunion.data.cover %}
         {% assign path = './images/' | append: reunion.data.cover %}
@@ -92,5 +96,6 @@
         {% endfor %}
       {% endif %}
     </article>
+    <div class="clear"></div>
   {% endfor %}
 </div>
