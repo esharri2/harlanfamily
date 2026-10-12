@@ -1,4 +1,4 @@
-.article {
+.article:not(.no-height) {
   min-height: 400px;
   figure {
     float: left;

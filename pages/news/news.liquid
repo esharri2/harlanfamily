@@ -6,18 +6,21 @@ pagination:
   size: 50
   reverse: true
 ---
+<!--
+  TODO once we get above 15 we'll need to implement pagination, other 11ty throws error trying to create 2 files with same permalink
+-->
 
-<!-- TODO once we get above 15 we'll need to implement pagination, other 11ty throws error trying to create 2 files with same permalink -->
-
-  {% for post in posts %}
-    <article class="article stack">
-      <h2>{{post.data.title}}</h2>
-      <p><span class="italic">{% prettyDate post.data.date %}</span> {%comment%}| <span class="italic">{{post.data.description}}</span>{% endcomment %}</p>
-      {{post.templateContent}}
-    </article>
-  {% endfor %}
+{% for post in posts %}
+  <article class="article stack no-height">
+    <h2>{{ post.data.title }}</h2>
+    <p>
+      <span class="italic">{% prettyDate post.data.date %}</span>
+      {% comment %}| <span class="italic">{{post.data.description}}</span>{% endcomment %}
+    </p>
+    {{ post.templateContent }}
+  </article>
+{% endfor %}
 
 {% comment %}
-{% render 'pagination', pagination: pagination %}
-
+  {% render 'pagination', pagination: pagination %}
 {% endcomment %}
