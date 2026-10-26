@@ -20,9 +20,9 @@ export default [
     ],
   },
   {
-    input: "scripts/messages",
+    input: "scripts/countdown.js",
     output: {
-      file: !dev ? "_site/messages.js" : "_temp/messages.js",
+      file: !dev ? "_site/countdown.js" : "_temp/countdown.js",
       format: "es",
     },
     plugins: [!dev && terser(), nodeResolve()],

@@ -3,12 +3,13 @@
   background-color: var(--color-accent-secondary);
   box-shadow: var(--shadow-s);
   color: var(--color-background);
-  display: flex;
+  display: block;
   font-size: var(--font-size-s);
   justify-content: center;
   margin-left: 50%;
   margin-top: var(--button-bar-height);
   min-height: 50px;
+  padding: var(--space-s);
   text-align: center;
   text-decoration: none;
   transform: translate(-50%, 0);
@@ -17,12 +18,21 @@
   div {
     margin: 0 auto;
     max-width: 900px;
-    padding: 0 var(--space-m);
     text-wrap: balance;
   }
 
   @media (min-width: 768px) {
     font-size: var(--font-size-m);
     margin-top: 0;
+  }
+
+  countdown-timer {
+    .digits {
+      border-radius: 5px;
+      font-family: "Monaco", ui-monospace, monospace;
+      background-color: #222222;
+      padding: 0 4px;
+      color: white;
+    }
   }
 }

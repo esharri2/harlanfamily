@@ -1,3 +1,5 @@
+// FILE IS DEFUNCT, packages have been removed.
+
 import { getDatabase, ref, push, set } from "firebase/database";
 
 export const postMessage = (name, email, message) => {

@@ -42,6 +42,7 @@
     "rollup": "^2.36.1",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-terser": "^7.0.2",
+    "temporal-polyfill": "^1.0.6",
     "terser": "^5.6.0"
   },
   "browserslist": [
@@ -52,9 +53,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "eleventy-plugin-metagen": "^1.4.0",
-    "firebase": "^9.4.1",
     "postcss-nested": "^5.0.5",
-    "rollup-plugin-svelte": "^7.1.0",
-    "simplycountdown.js": "^3.0.1"
+    "rollup-plugin-svelte": "^7.1.0"
   }
 }
